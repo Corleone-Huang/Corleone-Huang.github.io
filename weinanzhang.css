@@ -10,8 +10,11 @@ BODY {
 #footer {
 	BACKGROUND: #0a2245; MARGIN: 0px auto; HEIGHT: 100px; VERTICAL-ALIGN: bottom
 }
-#content {
+/* #content {
 	BACKGROUND: #white; PADDING-BOTTOM: 50px; PADDING-TOP: 20px; PADDING-LEFT: 50px; MARGIN: 0px auto; PADDING-RIGHT: 50px; WIDTH: 927px
+} */
+#content {
+	BACKGROUND: #white; PADDING-BOTTOM: 50px; PADDING-TOP: 20px; PADDING-LEFT: 50px; MARGIN: 0px auto; PADDING-RIGHT: 50px; WIDTH: 1200px
 }
 H0 {
 	FONT-SIZE: 30px;  display:inline-block;
