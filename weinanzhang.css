@@ -10,11 +10,8 @@ BODY {
 #footer {
 	BACKGROUND: #0a2245; MARGIN: 0px auto; HEIGHT: 100px; VERTICAL-ALIGN: bottom
 }
-/* #content {
-	BACKGROUND: #white; PADDING-BOTTOM: 50px; PADDING-TOP: 20px; PADDING-LEFT: 50px; MARGIN: 0px auto; PADDING-RIGHT: 50px; WIDTH: 927px
-} */
 #content {
-	BACKGROUND: #white; PADDING-BOTTOM: 50px; PADDING-TOP: 20px; PADDING-LEFT: 50px; MARGIN: 0px auto; PADDING-RIGHT: 50px; WIDTH: 1200px
+	BACKGROUND: #white; PADDING-BOTTOM: 50px; PADDING-TOP: 20px; PADDING-LEFT: 50px; MARGIN: 0px auto; PADDING-RIGHT: 50px; WIDTH: 927px
 }
 H0 {
 	FONT-SIZE: 30px;  display:inline-block;
@@ -32,8 +29,9 @@ P {
 	MARGIN: 10px 40px 10px 10px
 }
 TABLE {
-	MARGIN-BOTTOM: 10px; FONT-SIZE: 13px; BORDER-COLLAPSE: collapse; TEXT-ALIGN: left; WIDTH: 680px; BACKGROUND-COLOR: #f6fbfe
-}
+	MARGIN-BOTTOM: 10px; FONT-SIZE: 13px; BORDER-COLLAPSE: collapse; TEXT-ALIGN: left; WIDTH: 900px; BACKGROUND-COLOR: #f6fbfe
+}  
+/* 680px */
 .title {
 	FONT-WEIGHT: bold
 }
