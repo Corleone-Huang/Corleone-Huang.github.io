@@ -184,6 +184,17 @@ a.thumbnail:hover {
     font-weight: normal;
 }
 
+.news-date {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    color: #483D8B;
+    padding: 1px 6px;
+    background: #eef0ff;
+    border: 1px solid #dde2ff;
+    border-radius: 999px;
+}
+
 .inbox {
     margin-top: 5px;
     padding-bottom: 7px;
@@ -277,12 +288,13 @@ a.thumbnail:hover {
 }
 
 .award-year {
-    font-size: 0.9em;
+    font-size: 12px;
     color: #483D8B;
-    font-weight: bold;
-    background-color: #f0f0ff;
-    padding: 4px 10px;
-    border-radius: 12px;
+    font-weight: 700;
+    background: #eef0ff;
+    border: 1px solid #dde2ff;
+    padding: 1px 6px;
+    border-radius: 999px;
 }
 
 .competitions-container {
@@ -481,7 +493,6 @@ a.thumbnail:hover {
     color: #2f2f35;
     box-shadow: 0 1px 2px rgba(0,0,0,0.03);
 }
-/* 左侧小圆点装饰 */
 #papers .year-heading::before {
     content: "";
     display: inline-block;
