@@ -44,8 +44,10 @@ h1 {
 
 h2 {
     font-size: 20px;
-    padding-top: 15px;
-    display: inline-block;
+    padding-top: 5px;
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -260,11 +262,11 @@ a.thumbnail:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 15px;
+    padding: 5px 8px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background-color: #fdfdfd;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     max-width: 680px;
@@ -293,8 +295,8 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     max-width: 680px;
@@ -327,7 +329,7 @@ a.thumbnail:hover {
 }
 
 .education-container, .funding-container {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .education-card, .funding-card {
@@ -336,10 +338,10 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 5px 20px;
+    padding: 5px 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     max-width: 680px;
     box-sizing: border-box;
 }
@@ -434,15 +436,13 @@ a.thumbnail:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-#papers a img {
-    vertical-align: middle;
-}
-
 /* Year heading styles in Paper section */
 .year-heading {
-    display: inline-block;
-    padding: 5px 12px;
-    margin: 15px 0 10px;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 10px 0 5px;
     background-image: linear-gradient(to right, #f0f3ff, #e6e9f8);
     border: none;
     border-radius: 15px;
