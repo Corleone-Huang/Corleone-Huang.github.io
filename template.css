@@ -266,7 +266,7 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     margin-bottom: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    font-size: 13px;
+    font-size: 15px;
     max-width: 680px;
     box-sizing: border-box;
 }
