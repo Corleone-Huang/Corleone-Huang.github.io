@@ -198,6 +198,11 @@ a.thumbnail:hover {
     font-size: 13px;
     max-width: 680px;
     box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.internship-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .internship-header {
@@ -269,6 +274,11 @@ a.thumbnail:hover {
     font-size: 15px;
     max-width: 680px;
     box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.award-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .award-title {
@@ -299,6 +309,11 @@ a.thumbnail:hover {
     font-size: 13px;
     max-width: 680px;
     box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.competition-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .competition-title {
@@ -342,6 +357,11 @@ a.thumbnail:hover {
     margin-bottom: 10px;
     max-width: 680px;
     box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.education-card:hover, .funding-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .education-logo, .funding-logo {
