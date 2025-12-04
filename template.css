@@ -196,6 +196,8 @@ a.thumbnail:hover {
     padding: 15px;
     background-color: #fdfdfd;
     font-size: 13px;
+    max-width: 680px;
+    box-sizing: border-box;
 }
 
 .internship-header {
@@ -265,6 +267,8 @@ a.thumbnail:hover {
     margin-bottom: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
+    max-width: 680px;
+    box-sizing: border-box;
 }
 
 .award-title {
@@ -293,6 +297,8 @@ a.thumbnail:hover {
     margin-bottom: 15px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
+    max-width: 680px;
+    box-sizing: border-box;
 }
 
 .competition-title {
@@ -334,6 +340,8 @@ a.thumbnail:hover {
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     margin-bottom: 15px;
+    max-width: 680px;
+    box-sizing: border-box;
 }
 
 .education-logo, .funding-logo {
@@ -381,4 +389,24 @@ a.thumbnail:hover {
 
 .papers-table p {
     margin: 0;
+}
+
+/* New styles for the paper section */
+.paper-card {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    transition: box-shadow 0.3s ease;
+    max-width: 680px;
+    box-sizing: border-box;
+}
+
+.paper-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
