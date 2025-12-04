@@ -345,8 +345,8 @@ a.thumbnail:hover {
 }
 
 .education-logo, .funding-logo {
-    flex: 0 0 100px;
-    margin-right: 5px;
+    flex: 0 0 80px;
+    margin-right: 3px;
 }
 
 .education-logo img, .funding-logo img {
@@ -419,8 +419,8 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 6px;
+    margin-bottom: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     display: flex;
@@ -461,11 +461,16 @@ a.thumbnail:hover {
     vertical-align: middle;
 }
 
+/* Compact heading spacing for Paper section */
+#papers h2 {
+    margin: 4px 0 6px;
+}
+
 /* Year heading styles in Paper section */
 #papers .year-heading {
     display: inline-block;
     padding: 4px 8px;
-    margin: 6px 0 8px;
+    margin: 4px 0 8px;
     background-color: #f8f8fb;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
