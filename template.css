@@ -319,3 +319,66 @@ a.thumbnail:hover {
     font-size: 0.9em;
     color: #777;
 }
+
+.education-container, .funding-container {
+    margin-bottom: 20px;
+}
+
+.education-card, .funding-card {
+    display: flex;
+    align-items: center;
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.education-logo, .funding-logo {
+    flex: 0 0 100px;
+    margin-right: 25px;
+}
+
+.education-logo img, .funding-logo img {
+    max-width: 100%;
+}
+
+.education-details, .funding-details {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.education-details p, .funding-details p {
+    margin: 0;
+}
+
+.papers-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.papers-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.papers-table tr:last-child td {
+    border-bottom: none;
+}
+
+.papers-table tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.papers-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.papers-table p {
+    margin: 0;
+}
