@@ -346,7 +346,7 @@ a.thumbnail:hover {
 
 .education-logo, .funding-logo {
     flex: 0 0 100px;
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .education-logo img, .funding-logo img {
