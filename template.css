@@ -184,17 +184,6 @@ a.thumbnail:hover {
     font-weight: normal;
 }
 
-.news-date {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 12px;
-    color: #483D8B;
-    padding: 1px 6px;
-    background: #eef0ff;
-    border: 1px solid #dde2ff;
-    border-radius: 999px;
-}
-
 .inbox {
     margin-top: 5px;
     padding-bottom: 7px;
@@ -277,7 +266,7 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     margin-bottom: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    font-size: 15px;
+    font-size: 13px;
     max-width: 680px;
     box-sizing: border-box;
 }
@@ -288,13 +277,12 @@ a.thumbnail:hover {
 }
 
 .award-year {
-    font-size: 12px;
+    font-size: 0.9em;
     color: #483D8B;
-    font-weight: 700;
-    background: #eef0ff;
-    border: 1px solid #dde2ff;
-    padding: 1px 6px;
-    border-radius: 999px;
+    font-weight: bold;
+    background-color: #f0f0ff;
+    padding: 4px 10px;
+    border-radius: 12px;
 }
 
 .competitions-container {
@@ -357,8 +345,8 @@ a.thumbnail:hover {
 }
 
 .education-logo, .funding-logo {
-    flex: 0 0 50px;
-    margin-right: 2px;
+    flex: 0 0 100px;
+    margin-right: 5px;
 }
 
 .education-logo img, .funding-logo img {
@@ -431,8 +419,8 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 6px;
-    margin-bottom: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     display: flex;
@@ -450,62 +438,29 @@ a.thumbnail:hover {
     vertical-align: middle;
 }
 
-/* Paper card text styles */
-.paper-content {
-    flex: 1;
-    line-height: 1.3;
-}
-.paper-title {
-    display: block;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 1px;
-}
-.paper-authors {
-    color: #555;
-    margin-bottom: 1px;
-}
-.paper-badges a {
-    margin-right: 3px;
-}
-.paper-badges img {
-    height: 16px;
-    vertical-align: middle;
-}
-
-/* Compact heading spacing for Paper section */
-#papers h2 {
-    margin: 4px 0 6px;
-}
-
 /* Year heading styles in Paper section */
-#papers .year-heading {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 10px;
-    margin: 4px 0 6px;
-    background: linear-gradient(180deg, #fafafe 0%, #f7f7fb 100%);
-    border: 1px solid #e0e0e8;
-    border-radius: 14px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #2f2f35;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
-}
-#papers .year-heading::before {
-    content: "";
+.year-heading {
     display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #483D8B;
+    padding: 5px 12px;
+    margin: 15px 0 10px;
+    background-image: linear-gradient(to right, #f0f3ff, #e6e9f8);
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
-#papers .year-heading .year-value {
-    color: #483D8B;
+
+.year-heading:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.year-heading .year-value {
+    color: #4A55A2;
     font-weight: 700;
-    padding: 1px 6px;
-    background: #eef0ff;
-    border: 1px solid #dde2ff;
-    border-radius: 999px;
+    margin-left: 6px;
+    letter-spacing: 1px;
 }
