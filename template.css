@@ -44,10 +44,8 @@ h1 {
 
 h2 {
     font-size: 20px;
-    padding-top: 5px;
-    display: block;
-    clear: both;
-    margin-bottom: 10px;
+    padding-top: 15px;
+    display: inline-block;
 }
 
 h3 {
@@ -262,13 +260,13 @@ a.thumbnail:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 8px;
+    padding: 12px 15px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background-color: #fdfdfd;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    font-size: 13px;
+    font-size: 15px;
     max-width: 680px;
     box-sizing: border-box;
 }
@@ -295,8 +293,8 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     max-width: 680px;
@@ -329,7 +327,7 @@ a.thumbnail:hover {
 }
 
 .education-container, .funding-container {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .education-card, .funding-card {
@@ -338,10 +336,10 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     max-width: 680px;
     box-sizing: border-box;
 }
@@ -421,8 +419,8 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 3px 5px;
+    margin-bottom: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     display: flex;
@@ -441,8 +439,8 @@ a.thumbnail:hover {
     display: block;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 5px 10px;
-    margin: 10px 0 5px;
+    padding: 5px 12px;
+    margin: 15px 0 10px;
     background-image: linear-gradient(to right, #f0f3ff, #e6e9f8);
     border: none;
     border-radius: 15px;
