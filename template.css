@@ -422,7 +422,39 @@ a.thumbnail:hover {
     max-width: 680px;
     box-sizing: border-box;
 }
-
 .paper-card:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Paper card layout */
+.paper-left {
+    flex: 0 0 60px;
+    text-align: center;
+    margin-right: 12px;
+}
+.paper-left a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+}
+.paper-left img {
+    display: block;
+    margin: 0 auto 2px;
+}
+.paper-content {
+    flex: 1;
+}
+.paper-title {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+.paper-authors {
+    color: #555;
+    margin-bottom: 4px;
+}
+.paper-badges a {
+    margin-right: 6px;
 }
