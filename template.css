@@ -454,6 +454,7 @@ a.thumbnail:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* New styles for the paper section */
 .paper-title {
     font-weight: bold !important;
 }
