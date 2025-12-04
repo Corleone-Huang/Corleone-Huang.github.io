@@ -455,7 +455,7 @@ a.thumbnail:hover {
 }
 
 .paper-title {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 /* Year heading styles in Paper section */
