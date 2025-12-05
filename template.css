@@ -258,14 +258,14 @@ a.thumbnail:hover {
 }
 
 .awards-container {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .award-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 15px;
+    padding: 5px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background-color: #fdfdfd;
@@ -351,7 +351,7 @@ a.thumbnail:hover {
     background-color: #fdfdfd;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 5px 20px;
+    padding: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     margin-bottom: 10px;
