@@ -44,7 +44,7 @@ h1 {
 
 h2 {
     font-size: 20px;
-    padding-top: 15px;
+    padding-top: 5px; /* 从 15px 减小到 5px */
     display: inline-block;
 }
 
@@ -548,7 +548,7 @@ a.thumbnail:hover {
 /* Biography Section */
 #intro {
     clear: both;
-    margin: 30px 0;
+    margin: 15px 0; /* 从 30px 0 减小到 15px 0 */
     padding: 25px;
     background-color: #f8f9fa;
     border-radius: 8px;
