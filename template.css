@@ -28,7 +28,8 @@ body {
     background: white;
     padding: 20px 50px 50px;
     margin: 0 auto;
-    width: 1000px;
+    width: 1020px;
+    overflow: hidden; /* 添加清除浮动 */
 }
 
 h0 {
