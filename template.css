@@ -28,7 +28,7 @@ body {
     background: white;
     padding: 20px 50px 50px;
     margin: 0 auto;
-    width: 1020px;
+    width: 1100px;
     overflow: hidden; /* 添加清除浮动 */
 }
 
@@ -140,7 +140,7 @@ img {
 
 #left {
     float: left;
-    width: 705px;
+    width: 750px;
 }
 
 #right {
@@ -173,7 +173,7 @@ a.thumbnail:hover {
 
 #news {
     float: right;
-    width: 280px;
+    width: 300px;
     font-size: 13px;
     background: #f8f9fa;
     margin-top: 0;
