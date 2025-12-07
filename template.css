@@ -184,6 +184,11 @@ a.thumbnail:hover {
     margin-left: 20px;
 }
 
+#left {
+    float: left;
+    width: 750px;
+}
+
 #news h2 {
     font-size: 22px;
     color: #2c3e50;
