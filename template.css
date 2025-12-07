@@ -170,25 +170,28 @@ a.thumbnail:hover {
     margin: 0 auto;
 }
 
-/* News Section Enhancement */
+/* Scholarly News Section */
 #news {
     float: right;
     width: 220px;
     box-sizing: border-box;
     font-size: 13pt;
-    background: #fdfdfd;
+    background: #f8f9fa; /* Lighter, softer background */
     margin-top: 0;
-    padding: 15px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    border: 1px solid #e9ecef; /* Softer border */
+    border-radius: 6px;
 }
 
 #news h2 {
     padding-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
-    color: #0a2245;
+    color: #343a40; /* Dark grey for a more academic feel */
+    font-weight: normal;
+    font-size: 1.5em;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 15px;
 }
 
 .news-container {
@@ -197,48 +200,45 @@ a.thumbnail:hover {
 
 .news-list {
     list-style-type: none;
-    padding-left: 15px;
-    border-left: 3px solid #a8bed5;
+    padding-left: 10px;
+    border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
     margin-left: 5px;
     margin-top: 10px;
 }
 
 .news-list li {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Increased spacing */
     position: relative;
-    padding-left: 20px;
-    transition: all 0.2s ease-in-out;
+    padding-left: 25px;
 }
 
 .news-list li::before {
     content: '';
     position: absolute;
-    left: -22.5px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
+    left: -18px; /* Adjusted position for the new dot size */
+    top: 6px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    background-color: white;
-    border: 3px solid #0a2245;
-    transition: all 0.2s ease-in-out;
+    background-color: #adb5bd; /* Muted color for the timeline dot */
+    transition: background-color 0.3s ease;
 }
 
 .news-list li:hover::before {
-    background-color: #483D8B;
-    border-color: #483D8B;
+    background-color: #495057; /* Darker grey on hover for a subtle effect */
 }
 
 .news-date {
-    font-weight: bold;
-    color: #333;
-    font-size: 0.85em;
-    margin-bottom: 5px;
+    font-weight: 600; /* Semi-bold for clear distinction */
+    color: #495057; /* Dark grey, matching the hover dot */
+    font-size: 0.8em;
+    margin-bottom: 6px;
 }
 
 .news-content {
     font-size: 0.8em;
-    line-height: 1.5;
-    color: #555;
+    line-height: 1.6; /* Improved line height for readability */
+    color: #6c757d; /* Softer text color */
 }
 
 .inbox {
