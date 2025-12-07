@@ -544,3 +544,41 @@ a.thumbnail:hover {
     margin-left: 6px;
     letter-spacing: 1px;
 }
+
+/* Biography Section */
+#intro {
+    clear: both;
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+#intro h2 {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: #343a40;
+}
+
+#intro .bio-content p {
+    margin: 0 0 15px 0;
+    padding: 0;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555;
+}
+
+#intro .bio-content p:last-child {
+    margin-bottom: 0;
+}
+
+#intro .bio-content .lang-zh {
+    font-family: 'Kaiti', 'STKaiti', '华文楷体', serif; /* 使用更典雅的中文字体 */
+    color: #444;
+}
