@@ -545,33 +545,33 @@ a.thumbnail:hover {
     letter-spacing: 1px;
 }
 
-/* Biography Section */
+/* Biography Section (Compact) */
 #intro {
     clear: both;
     margin: 15px 0;
-    padding: 25px;
+    padding: 2px 3px; /* 上下内边距从 25px 减小到 15px */
     background-color: #f8f9fa;
     border-radius: 8px;
     border: 1px solid #e9ecef;
-    max-width: 680px; /* 与其他模块保持一致 */
-    box-sizing: border-box; /* 确保 padding 和 border 不会增加额外宽度 */
+    max-width: 680px;
+    box-sizing: border-box;
 }
 
 #intro h2 {
     display: block;
     width: 100%;
     padding-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px; /* 从 20px 减小到 12px */
     border-bottom: 1px solid #dee2e6;
-    padding-bottom: 15px;
+    padding-bottom: 10px; /* 从 15px 减小到 10px */
     font-weight: 600;
     color: #343a40;
 }
 
 #intro .bio-content p {
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0; /* 段落间距从 15px 减小到 8px */
     padding: 0;
-    line-height: 1.8;
+    line-height: 1.0; /* 行高从 1.8 减小到 1.5 */
     text-align: justify;
     color: #555;
 }
@@ -581,6 +581,6 @@ a.thumbnail:hover {
 }
 
 #intro .bio-content .lang-zh {
-    font-family: 'Kaiti', 'STKaiti', '华文楷体', serif; /* 使用更典雅的中文字体 */
+    font-family: 'Kaiti', 'STKaiti', '华文楷体', serif;
     color: #444;
 }
