@@ -179,6 +179,50 @@ a.thumbnail:hover {
     padding: 0 10px 15px;
 }
 
+#news h2 {
+    padding-bottom: 10px;
+}
+
+.news-container {
+    position: relative;
+}
+
+.news-list {
+    list-style-type: none;
+    padding-left: 10px;
+    border-left: 2px solid #a8bed5;
+    margin-left: 10px;
+}
+
+.news-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.news-list li::before {
+    content: '';
+    position: absolute;
+    left: -6.5px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0a2245;
+}
+
+.news-date {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.news-content {
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+
 #news .easylink {
     font-size: 0.8em;
     font-weight: normal;
