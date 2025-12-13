@@ -248,7 +248,7 @@ list-style-type: none;
 .news-list li {
     margin-bottom: 15px;
     position: relative;
-    padding-left: 25px;
+    padding-left: 8px;
 }
 
 .news-list li::before {
@@ -547,7 +547,6 @@ list-style-type: none;
 .paper-card:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
 /* New styles for the paper section */
 .paper-title {
     font-weight: bold !important;
