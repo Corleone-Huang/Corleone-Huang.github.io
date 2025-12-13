@@ -217,20 +217,20 @@ a.thumbnail:hover {
     font-size: 13pt;
     background: #f8f9fa; /* Lighter, softer background */
     margin-top: 0;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #e9ecef; /* Softer border */
     border-radius: 6px;
 }
 
 #news h2 {
     padding-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     color: #343a40; /* Dark grey for a more academic feel */
     font-weight: normal;
     font-size: 1.5em;
     border-bottom: 1px solid #e9ecef;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .news-container {
@@ -246,7 +246,7 @@ list-style-type: none;
 }
 
 .news-list li {
-    margin-bottom: 25px; /* Increased spacing */
+    margin-bottom: 15px;
     position: relative;
     padding-left: 25px;
 }
@@ -276,7 +276,7 @@ list-style-type: none;
 
 .news-content {
     font-size: 0.8em;
-    line-height: 1.6; /* Improved line height for readability */
+    line-height: 1.4;
     color: #6c757d; /* Softer text color */
 }
 
@@ -596,7 +596,7 @@ list-style-type: none;
 #intro .bio-content p {
     margin: 0 0 8px 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.2;
     text-align: justify;
     color: #555;
     font-family: "Times New Roman", "SimHei", serif;
@@ -608,6 +608,6 @@ list-style-type: none;
 }
 
 #intro .bio-content .lang-zh {
-    font-family: 'Kaiti', 'STKaiti', '华文楷体', serif;
+    font-family: "SimHei", "Microsoft YaHei", "PingFang SC", sans-serif;
     color: #444;
 }
