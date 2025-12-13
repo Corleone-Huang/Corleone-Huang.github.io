@@ -140,6 +140,10 @@ img {
     margin-bottom: 10px;
 }
 
+.profile-info .name-zh {
+    margin-bottom: 10px;
+}
+
 .profile-info .affiliation {
     margin-bottom: 10px;
     font-size: 16px;
@@ -292,7 +296,6 @@ a.thumbnail:hover {
     box-sizing: border-box;
     transition: box-shadow 0.3s ease;
 }
-
 .internship-card:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -584,22 +587,21 @@ a.thumbnail:hover {
 #intro {
     clear: both;
     margin: 15px 0;
-    padding: 2px 3px; /* 上下内边距从 25px 减小到 15px */
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border: 1px solid #e9ecef;
+    padding: 0;
+    background-color: transparent;
+    border: none;
     max-width: 680px;
     box-sizing: border-box;
 }
 
 #intro .bio-content p {
-    margin: 0 0 5px 0; /* 段落间距从 15px 减小到 8px */
+    margin: 0 0 8px 0;
     padding: 0;
-    line-height: 1.5; /* 行高从 1.8 减小到 1.5 */
+    line-height: 1.6;
     text-align: justify;
     color: #555;
     font-family: "Times New Roman", "SimHei", serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #intro .bio-content p:last-child {
