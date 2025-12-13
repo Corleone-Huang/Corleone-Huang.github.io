@@ -122,6 +122,37 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Times New Roman", "SimHei", serif;
+    font-size: 14px;
+}
+
+.profile-pic {
+    margin-right: 20px;
+}
+
+.profile-info .name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-info .affiliation {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.profile-info .links {
+    font-size: 14px;
+}
+
+.profile-info .links a {
+    text-decoration: none;
+}
+
 #profile {
     float: left;
     clear: both;
@@ -130,6 +161,10 @@ img {
 #intro {
     float: left;
     clear: both;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 15px 0;
 }
 
 #papers {
@@ -563,6 +598,8 @@ a.thumbnail:hover {
     line-height: 1.5; /* 行高从 1.8 减小到 1.5 */
     text-align: justify;
     color: #555;
+    font-family: "Times New Roman", "SimHei", serif;
+    font-size: 14px;
 }
 
 #intro .bio-content p:last-child {
