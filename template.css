@@ -238,7 +238,7 @@ a.thumbnail:hover {
 }
 
 .news-list {
-    list-style-type: none;
+list-style-type: none;
     padding-left: 10px;
     border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
     margin-left: 5px;
@@ -531,12 +531,11 @@ a.thumbnail:hover {
 
 /* New styles for the paper section */
 .paper-card {
-    background-color: #fdfdfd;
-    border: 1px solid #e0e0e0;
+    background-color: #f0f8ff;
+    border: none;
     border-radius: 8px;
-    padding: 3px 5px;
+    padding: 3px;
     margin-bottom: 3px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     font-size: 13px;
     display: flex;
     align-items: flex-start;
