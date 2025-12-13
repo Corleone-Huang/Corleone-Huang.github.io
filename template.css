@@ -240,7 +240,7 @@ a.thumbnail:hover {
 .news-list {
 list-style-type: none;
     padding-left: 10px;
-    border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
+border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
     margin-left: 5px;
     margin-top: 10px;
 }
@@ -264,12 +264,12 @@ list-style-type: none;
 }
 
 .news-list li:hover::before {
-    background-color: #495057; /* Darker grey on hover for a subtle effect */
+    background-color: #000000; /* Darker grey on hover for a subtle effect */
 }
 
 .news-date {
     font-weight: 600; /* Semi-bold for clear distinction */
-    color: #495057; /* Dark grey, matching the hover dot */
+    color: #000000; /* Dark grey, matching the hover dot */
     font-size: 0.8em;
     margin-bottom: 6px;
 }
@@ -277,7 +277,7 @@ list-style-type: none;
 .news-content {
     font-size: 0.8em;
     line-height: 1.4;
-    color: #6c757d; /* Softer text color */
+    color: #000000; /* Softer text color */
 }
 
 .inbox {
@@ -313,7 +313,7 @@ list-style-type: none;
 .internship-details {
     margin-bottom: 15px;
     line-height: 1.6;
-    color: #555;
+    color: #000000;
 }
 
 .project-section {
@@ -339,7 +339,7 @@ list-style-type: none;
 
 .project-authors {
     margin-bottom: 8px;
-    color: #555;
+    color: #000000;
     line-height: 1.5;
 }
 
@@ -348,7 +348,7 @@ list-style-type: none;
 }
 
 .project-desc {
-    color: #666;
+    color: #000000;
     line-height: 1.5;
 }
 
@@ -417,7 +417,7 @@ list-style-type: none;
 }
 
 .competition-title a {
-    color: #333;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -426,14 +426,14 @@ list-style-type: none;
 }
 
 .competition-details {
-    color: #555;
+    color: #000000;
     margin-bottom: 8px;
     line-height: 1.6;
 }
 
 .competition-date {
     font-size: 0.9em;
-    color: #777;
+    color: #000000;
 }
 
 .education-container, .funding-container {
@@ -484,18 +484,18 @@ list-style-type: none;
 }
 
 .funding-title {
-    color: #555;
+    color: #000000;
     margin-bottom: 2px;
 }
 
 .funding-duration {
     font-size: 12px;
-    color: #777;
+    color: #000000;
 }
 
 .funding-role {
     font-size: 12px;
-    color: #555;
+    color: #000000;
     margin-top: 2px;
     margin-bottom: 2px;
 }
@@ -564,7 +564,7 @@ list-style-type: none;
     border-radius: 15px;
     font-weight: 600;
     font-size: 14px;
-    color: #333;
+    color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
@@ -595,10 +595,10 @@ list-style-type: none;
 #intro .bio-content p {
     margin: 0 0 8px 0;
     padding: 0;
-    line-height: 1.2;
+    line-height: 1.6;
     text-align: justify;
-    color: #555;
-    font-family: "Times New Roman", "SimHei", serif;
+    color: #000000;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 16px;
 }
 
@@ -608,6 +608,6 @@ list-style-type: none;
 
 #intro .bio-content .lang-zh {
     font-family: "Songti SC", "SimSun", serif;
-    color: #444;
+    color: #000000;
     font-weight: bold;
 }
