@@ -44,7 +44,7 @@ h1 {
 
 h2 {
     font-size: 20px;
-    padding-top: 5px; /* 从 15px 减小到 5px */
+    padding-top: 5px;
     display: inline-block;
 }
 
@@ -170,7 +170,6 @@ font-size: 28px;
     padding: 0;
     margin: 15px 0;
 }
-
 #papers {
     float: left;
     clear: both;
@@ -286,7 +285,7 @@ border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
 }
 
 .internship-card {
-    margin-bottom: 20px;
+margin-bottom: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 15px;
@@ -345,6 +344,18 @@ border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
 
 .project-links {
     margin-bottom: 10px;
+}
+
+.awards-container {
+    margin-bottom: 10px;
+}
+
+.competitions-container {
+    margin-bottom: 15px;
+}
+
+.education-container, .funding-container {
+    margin-bottom: 15px;
 }
 
 .project-desc {
@@ -460,8 +471,8 @@ border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
 }
 
 .education-logo, .funding-logo {
-    flex: 0 0 60px; /* 从 80px 减小，让 logo 区域变窄 */
-    margin-right: 15px; /* 从 2px 调整，设置一个清晰的间距 */
+    flex: 0 0 80px;
+    margin-right: 2px;
 }
 
 .education-logo img, .funding-logo img {
@@ -584,10 +595,11 @@ border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
 /* Biography Section (Compact) */
 #intro {
     clear: both;
-    margin: 12px 0 0 0; /* 设置统一的模块上边距，并移除下边距 */
+    margin: 15px 0;
     padding: 15px 20px;
-    background-color: transparent;
-    border: none;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
     max-width: 680px;
     box-sizing: border-box;
 }
