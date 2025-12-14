@@ -596,10 +596,10 @@ margin-bottom: 20px;
 #intro {
     clear: both;
     margin: 15px 0;
-    padding: 15px 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    /* border: 1px solid #e9ecef; */
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
     max-width: 680px;
     box-sizing: border-box;
 }
@@ -609,7 +609,7 @@ margin-bottom: 20px;
     padding: 0;
     line-height: 1.2;
     text-align: justify;
-    color: #555;
+    color: #000000;
     font-family: "Times New Roman", "SimHei", serif;
     font-size: 16px;
 }
@@ -620,6 +620,6 @@ margin-bottom: 20px;
 
 #intro .bio-content .lang-zh {
     font-family: "Songti SC", "SimSun", serif;
-    color: #444;
+    color: #000000;
     font-weight: bold;
 }
