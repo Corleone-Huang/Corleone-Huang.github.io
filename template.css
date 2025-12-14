@@ -135,7 +135,7 @@ img {
 }
 
 .profile-info .name {
-    font-size: 28px;
+font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -353,7 +353,7 @@ border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
 }
 
 .awards-container {
-    margin-bottom: 10px;
+    margin-bottom: 0; /* 移除边距，由下一个 h2 的 margin-top 控制 */
 }
 
 .award-item {
@@ -437,7 +437,7 @@ border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
 }
 
 .education-container, .funding-container {
-    margin-bottom: 20px;
+    margin-bottom: 0; /* 移除边距，由下一个 h2 的 margin-top 控制 */
 }
 
 .education-card, .funding-card {
@@ -460,8 +460,8 @@ border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
 }
 
 .education-logo, .funding-logo {
-    flex: 0 0 80px;
-    margin-right: 2px;
+    flex: 0 0 60px; /* 从 80px 减小，让 logo 区域变窄 */
+    margin-right: 15px; /* 从 2px 调整，设置一个清晰的间距 */
 }
 
 .education-logo img, .funding-logo img {
@@ -584,8 +584,8 @@ border-left: 2px solid #e9ecef; /* Thinner, lighter timeline */
 /* Biography Section (Compact) */
 #intro {
     clear: both;
-    margin: 15px 0;
-    padding: 0;
+    margin: 12px 0 0 0; /* 设置统一的模块上边距，并移除下边距 */
+    padding: 15px 20px;
     background-color: transparent;
     border: none;
     max-width: 680px;
