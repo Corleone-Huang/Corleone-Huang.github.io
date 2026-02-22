@@ -664,3 +664,11 @@ margin-bottom: 20px;
 .project-authors-0222 {
   color: #333;
 }
+
+/* 新增：UNO专属花体红字样式（带0222标识） */
+.uno-cursive-red-0222 {
+    font-family: "Brush Script MT", "Segoe Script", "Lucida Calligraphy", cursive;
+    color: red; /* 红色字体 */
+    font-size: 1.1em; /* 可选：略放大花体字，更醒目 */
+    font-weight: bold; /* 可选：加粗花体字 */
+}
