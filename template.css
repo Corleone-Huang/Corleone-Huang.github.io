@@ -672,3 +672,24 @@ margin-bottom: 20px;
     font-size: 1.1em; /* 可选：略放大花体字，更醒目 */
     font-weight: bold; /* 可选：加粗花体字 */
 }
+
+/* 0224后缀 - 项目图片容器样式 */
+.project-image-0224 {
+    margin-bottom: 12px;
+}
+.project-image-0224 img {
+    border-radius: 6px; /* 轻微圆角提升质感 */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06); /* 浅阴影增加层次感 */
+    width: 100%;
+}
+
+/* 0224后缀 - UXO研究标题样式（核心优化） */
+.project-title-0224 {
+    font-size: 18px;
+    font-weight: 600; /* 半粗体，比纯bold更柔和 */
+    color: #2c3e50; /* 深灰蓝，更符合科研视觉风格 */
+    margin: 12px 0 10px; /* 上下间距适配列表 */
+    letter-spacing: 0.5px; /* 轻微字距，阅读更舒适 */
+    border-left: 3px solid #3498db; /* 左侧蓝色标识线，突出标题 */
+    padding-left: 10px; /* 标识线与文字间距 */
+}
