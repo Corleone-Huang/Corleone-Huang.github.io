@@ -685,7 +685,7 @@ margin-bottom: 20px;
 
 /* 0224后缀 - UXO研究标题样式（核心优化） */
 .project-title-0224 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600; /* 半粗体，比纯bold更柔和 */
     color: #2c3e50; /* 深灰蓝，更符合科研视觉风格 */
     margin: 12px 0 10px; /* 上下间距适配列表 */
