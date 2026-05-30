@@ -693,3 +693,69 @@ margin-bottom: 20px;
     border-left: 3px solid #3498db; /* 左侧蓝色标识线，突出标题 */
     padding-left: 10px; /* 标识线与文字间距 */
 }
+/* Modern Paper Styles */
+.paper-authors {
+    color: #555;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.my-name {
+    color: #222;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #a8bed5;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+.conf-badge {
+    display: inline-block;
+    background-color: #E6F7FF;
+    color: #0050B3;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #91caff;
+}
+
+.award-badge {
+    display: inline-block;
+    background-color: #FFF1F0;
+    color: #CF1322;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #ffa39e;
+}
+
+.paper-badges {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.link-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    color: #333 !important;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none !important;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+}
+
+.link-btn:hover {
+    background-color: #e9ecef;
+    border-color: #ccc;
+}
