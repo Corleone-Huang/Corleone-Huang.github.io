@@ -816,7 +816,7 @@ margin-bottom: 20px;
 }
 
 .project-btn::before {
-    content: "\2197";
+    content: "\2302";
     margin-right: 4px;
     color: #222;
     font-family: Arial, sans-serif;
