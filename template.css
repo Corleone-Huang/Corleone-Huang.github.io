@@ -48,6 +48,33 @@ h2 {
     display: inline-block;
 }
 
+.section-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 680px;
+    box-sizing: border-box;
+    clear: both;
+    margin: 18px 0 10px;
+    padding-top: 0;
+    line-height: 1.2;
+}
+
+.section-title:first-of-type {
+    margin-top: 0;
+}
+
+.section-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4A55A2 !important;
+    letter-spacing: 0.2px;
+}
+
+.section-title + .year-heading {
+    margin-top: 0;
+}
+
 h3 {
     display: bold;
 }
@@ -548,10 +575,15 @@ margin-bottom: 20px;
     padding: 3px;
     margin-bottom: 3px;
     font-size: 13px;
-    display: flex;
-    align-items: flex-start;
+    display: block;
+    clear: both;
     transition: box-shadow 0.3s ease;
     max-width: 680px;
+    box-sizing: border-box;
+}
+
+.paper-content {
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -697,7 +729,7 @@ margin-bottom: 20px;
 .paper-authors {
     color: #555;
     margin-top: 4px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     font-size: 13px;
     line-height: 1.4;
 }
@@ -734,16 +766,25 @@ margin-bottom: 20px;
 }
 
 .paper-badges {
-    margin-top: 6px;
+    clear: both;
+    margin: 4px 0 0 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.paper-badges > * {
+    margin-right: 8px;
+    margin-bottom: 4px;
 }
 
 .link-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     background-color: #f8f9fa;
     color: #333 !important;
     padding: 2px 8px;
@@ -753,6 +794,35 @@ margin-bottom: 20px;
     text-decoration: none !important;
     border: 1px solid #ddd;
     transition: all 0.2s ease;
+}
+
+.pdf-btn::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    background: url("pics/pdf.gif") center / contain no-repeat;
+    flex: 0 0 12px;
+}
+
+.code-btn::before {
+    content: "</>";
+    margin-right: 4px;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.project-btn::before {
+    content: "\2197";
+    margin-right: 4px;
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
 }
 
 .link-btn:hover {
