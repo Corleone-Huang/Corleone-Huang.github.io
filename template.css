@@ -656,6 +656,32 @@ margin-bottom: 20px;
     font-weight: bold;
 }
 
+#intro .research-intro {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+#intro .bio-content .research-role,
+#intro .bio-content .recruitment-callout {
+    margin: 0;
+    padding: 9px 13px;
+    border-radius: 0 6px 6px 0;
+    line-height: 1.35;
+    text-align: left;
+}
+
+#intro .bio-content .research-role {
+    background-color: #F6F8FC;
+    border-left: 3px solid #4A55A2;
+}
+
+#intro .bio-content .recruitment-callout {
+    background-color: #FFF7F6;
+    border: 1px solid #FFCCC7;
+    border-left: 3px solid #CF1322;
+}
+
 #intro .bio-content .recruitment-highlight {
     color: #CF1322;
     font-weight: bold;
