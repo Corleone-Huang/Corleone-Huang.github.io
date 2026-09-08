@@ -682,6 +682,10 @@ margin-bottom: 20px;
     border-left: 3px solid #CF1322;
 }
 
+#intro .bio-content .tiny-emphasis {
+    font-style: italic;
+}
+
 #intro .bio-content .recruitment-highlight {
     color: #CF1322;
     font-weight: bold;
