@@ -29,6 +29,9 @@ body {
     padding: 20px 50px 50px;
     margin: 0 auto;
     width: 927px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 2px;
 }
 
 h0 {
@@ -203,7 +206,7 @@ font-size: 28px;
 }
 
 #left {
-    float: left;
+    flex: 0 0 705px;
     width: 705px;
 }
 
@@ -237,7 +240,7 @@ a.thumbnail:hover {
 
 /* Scholarly News Section */
 #news {
-    float: right;
+    flex: 0 0 220px;
     width: 220px;
     box-sizing: border-box;
     font-size: 13pt;
