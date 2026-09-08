@@ -656,6 +656,11 @@ margin-bottom: 20px;
     font-weight: bold;
 }
 
+#intro .bio-content .recruitment-highlight {
+    color: #CF1322;
+    font-weight: bold;
+}
+
 /* 重置列表默认样式，去除缩进和圆点 - 带0222唯一标识 */
 .paper-list-0222 {
   list-style: none;  /* 去掉默认圆点 */
