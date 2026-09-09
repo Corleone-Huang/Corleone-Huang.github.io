@@ -67,6 +67,10 @@ h2 {
     margin-top: 0;
 }
 
+#intro > .section-title:first-of-type {
+    margin-top: 18px;
+}
+
 .section-link {
     font-size: 13px;
     font-weight: 600;
