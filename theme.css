@@ -111,9 +111,9 @@ img { max-width: 100%; }
 .career-tick {
     position: absolute;
     top: var(--tick-position);
-    left: 0;
+    left: -1px;
     transform: translate(-50%, -50%);
-    padding: 2px 5px;
+    padding: 2px 3px;
     background: var(--paper);
     color: #827a6d;
     font-size: 10px;
@@ -357,6 +357,4 @@ img { max-width: 100%; }
     .career-chart.is-enhanced .career-headings { gap: 64px; font-size: 9px; }
     .career-plot.is-ready .career-label { width: calc(50% - 32px); }
     .career-plot.is-ready .career-industry .career-label { margin-left: calc(50% + 32px); }
-    .career-plot.is-ready .career-range { left: calc(50% - 21.5px); }
-    .career-plot.is-ready .career-industry .career-range { left: calc(50% + 18.5px); }
 }

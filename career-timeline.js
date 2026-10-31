@@ -103,7 +103,7 @@
             occupied.push(position);
         };
         tick('Present', latest, true);
-        tick('Sep 2016', oldest, true);
+        tick('2016', oldest, true);
         for (let year = Math.floor(latest / 12); year >= 2024; year--) {
             if (year % 2 === 0 && latest - year * 12 >= 3) tick(String(year), year * 12);
         }
