@@ -12,11 +12,6 @@ body {
     margin: 0;
 }
 
-#header {
-    background: #a8bed5;
-    margin: 0 auto;
-}
-
 #footer {
     background: #0a2245;
     margin: 0 auto;
@@ -26,7 +21,7 @@ body {
 
 #content {
     background: white;
-    padding: 20px 50px 50px;
+    padding: 48px 50px 50px;
     margin: 0 auto;
     width: 927px;
     display: flex;
@@ -74,7 +69,7 @@ h2 {
 .section-link {
     font-size: 13px;
     font-weight: 600;
-    color: #4A55A2 !important;
+    color: #4A55A2;
     letter-spacing: 0.2px;
 }
 
@@ -599,7 +594,7 @@ margin-bottom: 20px;
 }
 /* New styles for the paper section */
 .paper-title {
-    font-weight: bold !important;
+    font-weight: bold;
 }
 
 /* Year heading styles in Paper section */
@@ -629,6 +624,136 @@ margin-bottom: 20px;
     font-weight: 700;
     margin-left: 6px;
     letter-spacing: 1px;
+}
+
+/* Selected Publications: white list with a clear reading hierarchy. */
+#publications {
+    width: 680px;
+    max-width: 100%;
+    clear: both;
+}
+
+#publications .year-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    margin: 30px 0 20px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    color: #646b76;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    transform: none;
+    transition: none;
+}
+
+#publications .year-heading::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #e5e7eb;
+}
+
+#publications .section-title + .year-heading {
+    margin-top: 18px;
+}
+
+#publications .paper-card {
+    margin: 0 0 24px;
+    padding: 0;
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+}
+
+#publications .paper-title {
+    display: block;
+    color: #20252c;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+#publications .paper-authors {
+    margin: 5px 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#publications .my-name {
+    color: #353a43;
+    text-decoration: none;
+}
+
+#publications .paper-venue {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 12px;
+    line-height: 1.5;
+}
+
+#publications .conf-badge,
+#publications .award-badge {
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    font-size: 13px;
+}
+
+#publications .conf-badge {
+    color: #505865;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#publications .award-badge {
+    color: #b42332;
+    font-weight: 600;
+}
+
+#publications .paper-badges {
+    display: block;
+    margin: 5px 0 0;
+    line-height: 1.5;
+}
+
+#publications .paper-badges .link-btn {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: #4A55A2;
+    font-size: 13px;
+    transition: none;
+}
+
+#publications .link-btn::before {
+    content: none;
+}
+
+#publications .link-btn + .link-btn::before {
+    content: "·";
+    display: inline;
+    margin: 0 8px;
+    background: none;
+    color: #9ca3af;
+    font: inherit;
+}
+
+#publications .link-btn:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 /* Biography Section (Compact) */
@@ -828,12 +953,12 @@ margin-bottom: 20px;
     align-items: center;
     justify-content: center;
     background-color: #f8f9fa;
-    color: #333 !important;
+    color: #333;
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 12px;
     font-weight: 500;
-    text-decoration: none !important;
+    text-decoration: none;
     border: 1px solid #ddd;
     transition: all 0.2s ease;
 }
