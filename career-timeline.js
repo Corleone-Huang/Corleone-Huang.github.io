@@ -27,8 +27,8 @@
     const baseDistance = month => {
         if (month <= boundary) return (month - oldest) * 0.7;
         const early = (boundary - oldest) * 0.7;
-        if (month <= recentBoundary) return early + (month - boundary) * 3;
-        return early + (recentBoundary - boundary) * 3 + (month - recentBoundary) * 18;
+        if (month <= recentBoundary) return early + (month - boundary) * 2.6;
+        return early + (recentBoundary - boundary) * 2.6 + (month - recentBoundary) * 14;
     };
     const dates = [...new Set([
         oldest, latest, boundary, recentBoundary, monthIndex('2020-01'),
