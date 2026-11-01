@@ -272,6 +272,8 @@ img { max-width: 100%; }
 #publications .paper-badges .link-btn,
 #publications .conf-badge,
 #publications .award-badge { line-height: 1.45; }
+#publications .code-btn.has-stars { white-space: nowrap; }
+#publications .github-stars { margin-left: 4px; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
 .publication-legend { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .awards-container { max-width: none; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; }
 .award-group { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 20px; margin-bottom: 22px; }
