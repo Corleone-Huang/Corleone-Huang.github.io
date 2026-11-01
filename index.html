@@ -7,7 +7,7 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="template.css?v=c173c63b77e5" />
-    <link rel="stylesheet" type="text/css" href="theme.css?v=3e3179709061" />
+    <link rel="stylesheet" type="text/css" href="theme.css?v=cf9eb830b5cc" />
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,45 +18,128 @@
         ga('send', 'pageview');
     </script>
     <link rel="icon" href="pics/ustc-favicon.png">
-    <script src="career-timeline.js?v=917b6818cac6" defer></script>
+    <script src="career-timeline.js?v=5fd0cb61be34" defer></script>
     <script src="news.js?v=d572552f86bc" defer></script>
 </head>
 
 <body>
     <div id="content">
         <main id="left">
-            <header class="profile-container">
-                <div class="profile-pic">
-                    <img src="pics/self.jpg" width="1280" height="1280" alt="Portrait of Mengqi Huang"></div>
-                <div class="profile-info">
-                    <h1 class="name">Mengqi Huang</h1>
-                    <div class="name-zh">
-                        <img src="pics/huangmq_name.png" lang="zh-CN" width="310" height="95" alt="黄梦琪"></div>
-                    <div class="affiliation">
-                        University of Science and Technology of China</div>
-                    <div class="affiliation">
-                        Email: <a class="email-link" href="mailto:huangmq@ustc.edu.cn">huangmq [AT] ustc.edu.cn</a></div>
-                    <nav class="profile-links" aria-label="Academic profiles">
-                        <a href="https://scholar.google.com.hk/citations?user=BJvM6gsAAAAJ&amp;hl=zh-CN&amp;oi=sra">Google Scholar</a>
-                        <a href="https://github.com/Corleone-Huang">GitHub</a>
+            <div class="intro-layout">
+                <div class="intro-main">
+                    <header class="profile-container">
+                        <div class="profile-pic">
+                            <img src="pics/self.jpg" width="1280" height="1280" alt="Portrait of Mengqi Huang"></div>
+                        <div class="profile-info">
+                            <h1 class="name">Mengqi Huang</h1>
+                            <div class="name-zh">
+                                <img src="pics/huangmq_name.png" lang="zh-CN" width="310" height="95" alt="黄梦琪"></div>
+                            <div class="affiliation">
+                                University of Science and Technology of China</div>
+                            <div class="affiliation">
+                                Email: <a class="email-link" href="mailto:huangmq@ustc.edu.cn">huangmq [AT] ustc.edu.cn</a></div>
+                            <nav class="profile-links" aria-label="Academic profiles">
+                                <a href="https://scholar.google.com.hk/citations?user=BJvM6gsAAAAJ&amp;hl=zh-CN&amp;oi=sra">Google Scholar</a>
+                                <a href="https://github.com/Corleone-Huang">GitHub</a>
+                            </nav>
+                        </div>
+                    </header>
+
+                    <nav class="section-nav" aria-label="Page sections">
+                        <a href="#experience" aria-label="Career">Career</a>
+                        <a href="#funding" aria-label="Funding">Funding</a>
+                        <a href="#publications" aria-label="Publications">Publications</a>
+                        <a href="#awards" aria-label="Awards">Awards</a>
+                        <a href="#industrial-research" aria-label="Projects">Projects</a>
                     </nav>
-                </div>
-            </header>
 
-            <section id="intro" aria-label="Research interests">
-                <div class="bio-content">
-                    <!-- I received my Ph.D. degree from the University of Science and Technology of China (USTC) in 2025.  -->
-                    <p>My research interests include deep generative models, image/video/3D generation, and unified multimodal models. I am the recipient of the Best Student Paper Award at ACM Multimedia 2022 as the first author. In 2025, I was awarded the First Prize of the Natural Science Award from the China Society of Image and Graphics (CSIG) and the Special Prize of the President Scholarship of the Chinese Academy of Sciences (CAS). I have also received funding from the First National Natural Science Foundation of China for Youth Student Fundamental Research (Ph.D. student). I was selected for top industry talent programs including the Alibaba, ByteDance, etc.</p>
-                    <p class="lang-zh" lang="zh-CN">研究方向为图像、视频、3D等视觉内容生成和多模态生成-理解统一模型。 博士期间以第一作者获CCF-A类国际会议ACM Multimedia 2022最佳学生论文奖。获2025年中国图像图形学会自然科学一等奖; 获批首届国家自然科学基金青年学生基础研究项目（博士研究生）。获2025年中国科学院院长特别奖。25年校招入选阿里星（校招P7）、字节跳动头部人才计划（校招3-1）等。</p>
-                    <!-- Research group and recruitment information (temporarily hidden)
-                    <div class="research-intro">
-                        <p class="research-role">I am currently leading a research group at USTC, dedicated to advancing the frontiers of generative and multimodal intelligence.</p>
-                        <p class="research-role">I am also leading a research team at a <span class="tiny-emphasis">tiny</span> startup as CTO &amp; Co-Founder, where we are developing a next-generation large-scale video foundation model.</p>
-                        <p class="recruitment-callout">We are seeking highly self-motivated <span class="recruitment-highlight">Master’s and Ph.D. students, interns, and full-time researchers</span> to join us in pursuing impactful research on next-generation generative models. We provide substantial computational resources, including large-scale high-end NVIDIA GPUs, and extensive access to coding-model tokens (e.g., Codex and Claude). Feel free to contact me via email if you are interested.</p>
-                    </div> -->
-                </div>
+                    <section id="intro" aria-label="Research interests">
+                        <div class="bio-content">
+                            <!-- I received my Ph.D. degree from the University of Science and Technology of China (USTC) in 2025.  -->
+                            <p>My research interests include deep generative models, image/video/3D generation, and unified multimodal models.</p>
+                            <p>I am the recipient of the Best Student Paper Award at ACM Multimedia 2022 as the first author. In 2025, I was awarded the First Prize of the Natural Science Award from the China Society of Image and Graphics (CSIG) and the Special Prize of the President Scholarship of the Chinese Academy of Sciences (CAS). I have also received funding from the First National Natural Science Foundation of China for Youth Student Fundamental Research (Ph.D. student). I was selected for top industry talent programs including the Alibaba, ByteDance, etc.</p>
+                            <p class="lang-zh" lang="zh-CN">研究方向为图像、视频、3D等视觉内容生成和多模态生成-理解统一模型。 博士期间以第一作者获CCF-A类国际会议ACM Multimedia 2022最佳学生论文奖。获2025年中国图像图形学会自然科学一等奖; 获批首届国家自然科学基金青年学生基础研究项目（博士研究生）。获2025年中国科学院院长特别奖。25年校招入选阿里星（校招P7）、字节跳动头部人才计划（校招3-1）等。</p>
+                            <!-- Research group and recruitment information (temporarily hidden)
+                            <div class="research-intro">
+                                <p class="research-role">I am currently leading a research group at USTC, dedicated to advancing the frontiers of generative and multimodal intelligence.</p>
+                                <p class="research-role">I am also leading a research team at a <span class="tiny-emphasis">tiny</span> startup as CTO &amp; Co-Founder, where we are developing a next-generation large-scale video foundation model.</p>
+                                <p class="recruitment-callout">We are seeking highly self-motivated <span class="recruitment-highlight">Master’s and Ph.D. students, interns, and full-time researchers</span> to join us in pursuing impactful research on next-generation generative models. We provide substantial computational resources, including large-scale high-end NVIDIA GPUs, and extensive access to coding-model tokens (e.g., Codex and Claude). Feel free to contact me via email if you are interested.</p>
+                            </div> -->
+                        </div>
 
-            </section>
+                    </section>
+                </div>
+                <aside id="news" aria-labelledby="news-title">
+                    <h2 id="news-title">News</h2>
+                    <ul class="news-list">
+                        <li>
+                            <div class="news-date">May 2026</div>
+                            <div class="news-content">UFO was accepted at ICML 2026.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">February 2026</div>
+                            <div class="news-content">USO and UMO were accepted at CVPR 2026.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">January 2026</div>
+                            <div class="news-content">One paper was accepted by IEEE TPAMI.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">November 2025</div>
+                            <div class="news-content">One paper was accepted at AAAI 2026.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">October 2025</div>
+                            <div class="news-content">One paper was accepted by IEEE TPAMI.</div>
+                            </li>
+                    </ul>
+                    <details class="news-archive">
+                        <summary>Earlier news</summary>
+                        <ul class="news-list">
+                        <li>
+                            <div class="news-date">September 2025</div>
+                            <div class="news-content">One paper was accepted at NeurIPS 2025.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">June 2025</div>
+                            <div class="news-content">Four papers were accepted at ICCV 2025.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">February 2025</div>
+                            <div class="news-content">Four papers were accepted at CVPR 2025.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">December 2024</div>
+                            <div class="news-content">One paper was accepted at AAAI 2025.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">February 2024</div>
+                            <div class="news-content">One paper was accepted at CVPR 2024.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">December 2023</div>
+                            <div class="news-content">Two papers were accepted at AAAI 2024.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">March 2023</div>
+                            <div class="news-content">“Towards Accurate Image Coding” was selected as a Highlight at CVPR 2023.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">February 2023</div>
+                            <div class="news-content">Two papers were accepted at CVPR 2023.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">October 2022</div>
+                            <div class="news-content">“DSE-GAN” received the Best Student Paper Award at ACM Multimedia 2022.</div>
+                            </li>
+                        <li>
+                            <div class="news-date">June 2022</div>
+                            <div class="news-content">One paper was accepted at ACM Multimedia 2022.</div>
+                            </li>
+                        </ul>
+                    </details>
+                </aside>
+            </div>
 
             <section class="page-section career-section" aria-labelledby="experience">
             <h2 class="section-title" id="experience"><span>Career Timeline</span></h2>
@@ -87,8 +170,8 @@
                                 <div class="career-label">
                                     <div class="career-date"><time datetime="2023-07">July 2023</time> – <time datetime="2026-07">July 2026</time></div>
                                     <h3 class="career-role">Researcher</h3>
-                                    <div class="career-focus">Image &amp; Video Generation</div>
                                     <div class="career-organization"><a href="https://bytedance.com/">ByteDance Inc.</a></div>
+                                    <div class="career-focus">Image &amp; Video Generation</div>
                                     <div class="career-note">Intelligent Creation Department</div>
                                 </div>
                             </li>
@@ -473,7 +556,6 @@
                             <img src="./pics/uxo_logo.jpg" width="3098" height="1342" alt="Overview of the UXO series for image customization" loading="lazy"></div>
                         <!-- <strong>UXO Series Research: </strong> -->
                         <h3 class="project-title">UXO Series Research</h3>
-                        <p class="project-desc">The UXO series studies subject- and style-conditioned image generation, including controllability, disentangled reward modeling, and multi-identity consistency.</p>
                         <ul class="paper-list-0222">
                             <li class="paper-item-0222">
                             <img src="pics/logos/uno.jpg" class="paper-logo-0222" width="262" height="159" alt="UNO project logo" loading="lazy">
@@ -521,7 +603,9 @@
 
                                     <a href="https://github.com/bytedance/UMO" class="link-btn code-btn">Code</a></div></div>
                             </li>
-                        </ul></div></div>
+                        </ul>
+                        <p class="project-desc">The UXO series studies subject- and style-conditioned image generation, including controllability, disentangled reward modeling, and multi-identity consistency.</p>
+                    </div></div>
 
 
 
@@ -574,78 +658,9 @@
                         March 2020 - June 2020</div></div></div>
             -->
 
-            <footer class="site-footer">Last updated: <time datetime="2026-10">October 2026</time></footer>
+            <footer class="site-footer">Last updated: <time datetime="2026-11">November 2026</time></footer>
         </main>
-        <aside id="news" aria-labelledby="news-title">
-            <h2 id="news-title">News</h2>
-            <ul class="news-list">
-                <li>
-                    <div class="news-date">May 2026</div>
-                    <div class="news-content">UFO was accepted at ICML 2026.</div>
-                    </li>
-                <li>
-                    <div class="news-date">February 2026</div>
-                    <div class="news-content">USO and UMO were accepted at CVPR 2026.</div>
-                    </li>
-                <li>
-                    <div class="news-date">January 2026</div>
-                    <div class="news-content">One paper was accepted by IEEE TPAMI.</div>
-                    </li>
-                <li>
-                    <div class="news-date">November 2025</div>
-                    <div class="news-content">One paper was accepted at AAAI 2026.</div>
-                    </li>
-                <li>
-                    <div class="news-date">October 2025</div>
-                    <div class="news-content">One paper was accepted by IEEE TPAMI.</div>
-                    </li>
-            </ul>
-            <details class="news-archive">
-                <summary>Earlier news</summary>
-                <ul class="news-list">
-                <li>
-                    <div class="news-date">September 2025</div>
-                    <div class="news-content">One paper was accepted at NeurIPS 2025.</div>
-                    </li>
-                <li>
-                    <div class="news-date">June 2025</div>
-                    <div class="news-content">Four papers were accepted at ICCV 2025.</div>
-                    </li>
-                <li>
-                    <div class="news-date">February 2025</div>
-                    <div class="news-content">Four papers were accepted at CVPR 2025.</div>
-                    </li>
-                <li>
-                    <div class="news-date">December 2024</div>
-                    <div class="news-content">One paper was accepted at AAAI 2025.</div>
-                    </li>
-                <li>
-                    <div class="news-date">February 2024</div>
-                    <div class="news-content">One paper was accepted at CVPR 2024.</div>
-                    </li>
-                <li>
-                    <div class="news-date">December 2023</div>
-                    <div class="news-content">Two papers were accepted at AAAI 2024.</div>
-                    </li>
-                <li>
-                    <div class="news-date">March 2023</div>
-                    <div class="news-content">“Towards Accurate Image Coding” was selected as a Highlight at CVPR 2023.</div>
-                    </li>
-                <li>
-                    <div class="news-date">February 2023</div>
-                    <div class="news-content">Two papers were accepted at CVPR 2023.</div>
-                    </li>
-                <li>
-                    <div class="news-date">October 2022</div>
-                    <div class="news-content">“DSE-GAN” received the Best Student Paper Award at ACM Multimedia 2022.</div>
-                    </li>
-                <li>
-                    <div class="news-date">June 2022</div>
-                    <div class="news-content">One paper was accepted at ACM Multimedia 2022.</div>
-                    </li>
-                </ul>
-            </details>
-        </aside>
+
     </div>
 </body>
 </html>

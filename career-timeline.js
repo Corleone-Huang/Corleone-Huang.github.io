@@ -40,7 +40,17 @@
     const layout = () => {
         lastWidth = chart.getBoundingClientRect().width;
         // Let the two duration tracks spread toward their columns on wider charts.
-        chart.style.setProperty('--career-gutter', Math.min(200, Math.max(64, lastWidth * 0.22)) + 'px');
+        const gutter = Math.min(200, Math.max(64, lastWidth * 0.22));
+        const column = (lastWidth - gutter) / 2;
+        const labelWidth = Math.min(280, column);
+        const inset = (column - labelWidth) / 2;
+        const connectorWidth = inset - 0.5;
+        chart.style.setProperty('--career-gutter', gutter + 'px');
+        chart.style.setProperty('--career-column-width', column + 'px');
+        chart.style.setProperty('--career-label-width', labelWidth + 'px');
+        chart.style.setProperty('--career-label-inset', inset + 'px');
+        chart.style.setProperty('--career-connector-width', Math.max(0, connectorWidth) + 'px');
+        chart.classList.toggle('has-connectors', connectorWidth >= 8);
         chart.classList.add('is-enhanced');
         chart.classList.toggle('is-narrow', lastWidth < 420);
         plot.classList.add('is-ready');
