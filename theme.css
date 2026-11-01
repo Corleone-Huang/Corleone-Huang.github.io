@@ -82,7 +82,7 @@ img { max-width: 100%; }
 .section-link { flex-shrink: 0; font: 500 12px/1.6 var(--sans); letter-spacing: 0; }
 /* The unenhanced timeline stays readable as a normal document list. */
 .career-viewport { overflow: visible; }
-.career-chart { min-width: 0; }
+.career-chart { --career-gutter: 76px; --career-track-offset: calc(var(--career-gutter) / 2 - 8px); width: 100%; min-width: 0; margin: 0; }
 .career-headings { display: none; }
 .career-plot { position: relative; }
 .career-axis, .career-range { display: none; }
@@ -92,13 +92,14 @@ img { max-width: 100%; }
 .career-chart.is-enhanced .career-headings {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 76px;
+    gap: var(--career-gutter);
     margin-bottom: 16px;
     color: var(--muted);
     font-size: 11px;
     letter-spacing: 0.75px;
     text-transform: uppercase;
 }
+.career-chart.is-enhanced .career-headings > span { text-align: center; }
 .career-plot.is-ready { height: var(--timeline-height, 320px); }
 .career-plot.is-ready .career-axis {
     display: block;
@@ -144,7 +145,7 @@ img { max-width: 100%; }
 .career-plot.is-ready .career-range {
     display: block;
     position: absolute;
-    inset: 0 auto 0 calc(50% - 25.5px);
+    inset: 0 auto 0 calc(50% - var(--career-track-offset) - 1.5px);
     width: 3px;
     border-radius: 2px;
     background: #b5aa98;
@@ -161,16 +162,19 @@ img { max-width: 100%; }
 .career-range::before { top: -3px; }
 .career-range::after { bottom: -3px; }
 .career-plot.is-ready .career-current .career-range { background: var(--accent); }
-.career-plot.is-ready .career-industry .career-range { left: calc(50% + 22.5px); background: #788e83; }
+.career-plot.is-ready .career-industry .career-range { left: calc(50% + var(--career-track-offset) - 1.5px); background: #788e83; }
 .career-plot.is-ready .career-startup .career-range { background: #4f7161; }
-.career-plot.is-ready .career-label { position: relative; top: var(--label-offset); width: calc(50% - 38px); }
-.career-plot.is-ready .career-industry .career-label { margin-left: calc(50% + 38px); }
+.career-plot.is-ready .career-label { position: relative; top: var(--label-offset); width: calc((100% - var(--career-gutter)) / 2); text-align: center; overflow-wrap: break-word; }
+.career-plot.is-ready .career-industry .career-label { margin-left: calc((100% + var(--career-gutter)) / 2); }
 .career-date { margin: 0 0 4px; color: var(--muted); font-size: 12px; line-height: 1.6; font-variant-numeric: tabular-nums; }
 .career-date time { white-space: nowrap; }
 .career-present { color: var(--accent); }
 .career-role { margin: 0; padding: 0; color: var(--ink); font-size: 14px; font-weight: 600; line-height: 1.5; }
 .career-organization, .career-note { margin-top: 3px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .career-organization a { color: var(--ink); }
+.career-chart.is-narrow .career-headings { font-size: 10px; letter-spacing: 0.5px; }
+.career-chart.is-narrow .career-date { font-size: 11px; }
+.career-chart.is-narrow .career-role { font-size: 13px; }
 /* Funding and honors share the same date column. */
 .funding-container { margin: 0; }
 .funding-card {
@@ -221,11 +225,11 @@ img { max-width: 100%; }
 #publications .year-heading::after { content: ""; flex: 1; border-top: 1px solid var(--rule); }
 #publications .paper-card { margin: 0 0 24px; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; transition: none; }
 #publications .paper-card:hover { box-shadow: none; transform: none; }
-#publications .paper-title { display: block; margin: 0; padding: 0; color: var(--ink); font: 600 16px/1.45 var(--serif); }
+#publications .paper-title { display: block; margin: 0; padding: 0; color: var(--ink); font: 600 16px/1.4 var(--serif); }
 #publications .paper-title a { color: var(--ink); }
-#publications .paper-authors { margin: 6px 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+#publications .paper-authors { margin: 3px 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .my-name, #publications .my-name { color: var(--ink); font-weight: 600; text-decoration: none; }
-#publications .paper-venue { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; line-height: 1.6; }
+#publications .paper-venue { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 12px; line-height: 1.45; }
 .conf-badge, .award-badge, #publications .conf-badge, #publications .award-badge {
     display: inline;
     margin: 0;
@@ -263,6 +267,10 @@ img { max-width: 100%; }
     font: inherit;
 }
 .paper-badges .link-btn:hover, #publications .paper-badges .link-btn:hover { text-decoration: underline; text-underline-offset: 3px; background: none; }
+#publications .paper-badges { margin-top: 2px; gap: 3px 0; line-height: 1.45; }
+#publications .paper-badges .link-btn,
+#publications .conf-badge,
+#publications .award-badge { line-height: 1.45; }
 .publication-legend { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .awards-container { max-width: none; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; }
 .award-group { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 20px; margin-bottom: 22px; }
@@ -303,15 +311,15 @@ img { max-width: 100%; }
 .site-footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; }
 /* News remains a separate column on wide screens. */
 #news { width: 100%; min-width: 0; margin: 0; padding: 0 0 0 24px; border: 0; border-left: 1px solid var(--rule); border-radius: 0; background: transparent; }
-#news h2 { display: block; margin: 0 0 24px; padding: 0; border: 0; color: var(--ink); font: 400 24px/1.3 var(--serif); text-align: left; }
+#news h2 { display: block; margin: 0 0 16px; padding: 0; border: 0; color: var(--ink); font: 400 24px/1.3 var(--serif); text-align: left; }
 .news-list { margin: 0; padding: 0; border: 0; list-style: none; }
-.news-list li { margin: 0 0 20px; padding: 0; }
+.news-list li { margin: 0 0 16px; padding: 0; }
 .news-list li::before { display: none; }
-.news-date { margin: 0 0 4px; color: #827a6d; font-size: 11px; font-weight: 500; letter-spacing: 0.2px; font-variant-numeric: tabular-nums; }
+.news-date { margin: 0 0 3px; color: #827a6d; font-size: 11px; font-weight: 500; letter-spacing: 0.2px; font-variant-numeric: tabular-nums; }
 .news-content { color: var(--muted); font-size: 12px; line-height: 1.7; }
 .news-archive { margin-top: 4px; color: var(--muted); font-size: 12px; }
 .news-archive summary { width: fit-content; padding: 4px 0; color: var(--accent); cursor: pointer; }
-.news-archive[open] summary { margin-bottom: 18px; }
+.news-archive[open] summary { margin-bottom: 12px; }
 @media (max-width: 1100px) {
     #content { padding: 40px 28px 56px; gap: 28px; grid-template-columns: minmax(0, 1fr) 180px; }
     .profile-container { gap: 20px; }
@@ -319,10 +327,11 @@ img { max-width: 100%; }
 }
 @media (max-width: 740px) {
     #content { grid-template-columns: minmax(0, 1fr); max-width: 840px; gap: 40px; padding: 36px 28px 48px; }
-    #news { padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--rule); }
-    .news-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 28px; }
-    .news-list li { margin: 0; }
-    .news-archive { margin-top: 20px; }
+    #news { margin-top: 32px; padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--rule); }
+    .news-list { display: grid; gap: 12px; }
+    .news-list li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 12px; margin: 0; }
+    .news-date { margin: 0; line-height: 1.85; }
+    .news-archive { margin-top: 12px; }
 }
 @media (max-width: 600px) {
     #content { padding: 28px 24px 40px; }
@@ -335,9 +344,6 @@ img { max-width: 100%; }
     .section-title { flex-wrap: wrap; gap: 6px 12px; }
     .funding-card, .award-group { grid-template-columns: 64px minmax(0, 1fr); gap: 14px; }
     .funding-year, .award-group-year { font-size: 12px; }
-    .career-date { font-size: 11px; }
-    .career-chart.is-enhanced .career-headings { font-size: 10px; letter-spacing: 0.5px; }
-    .career-role { font-size: 13px; }
 }
 @media (max-width: 420px) {
     #content { padding-right: 20px; padding-left: 20px; }
@@ -354,7 +360,4 @@ img { max-width: 100%; }
     .profile-info .name { font-size: 24px; }
     .profile-info .affiliation { font-size: 11px; }
     .profile-links { font-size: 11px; }
-    .career-chart.is-enhanced .career-headings { gap: 64px; font-size: 9px; }
-    .career-plot.is-ready .career-label { width: calc(50% - 32px); }
-    .career-plot.is-ready .career-industry .career-label { margin-left: calc(50% + 32px); }
 }

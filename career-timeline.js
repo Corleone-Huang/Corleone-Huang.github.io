@@ -1,4 +1,4 @@
-// One shared date mapping keeps academic and industry periods comparable.
+// Both columns use the same date mapping and expand together when text wraps.
 (() => {
     const plot = document.querySelector('.career-plot');
     if (!plot) return;
@@ -36,8 +36,13 @@
         ...Array.from({ length: Math.floor(latest / 12) - 2023 }, (_, i) => (2024 + i) * 12)
     ])].filter(month => month >= oldest && month <= latest).sort((a, b) => a - b);
 
+    let lastWidth = 0;
     const layout = () => {
+        lastWidth = chart.getBoundingClientRect().width;
+        // Let the two duration tracks spread toward their columns on wider charts.
+        chart.style.setProperty('--career-gutter', Math.min(200, Math.max(64, lastWidth * 0.22)) + 'px');
         chart.classList.add('is-enhanced');
+        chart.classList.toggle('is-narrow', lastWidth < 420);
         plot.classList.add('is-ready');
         const measurements = new Map(entries.map(entry => {
             const label = entry.querySelector('.career-label');
@@ -50,8 +55,7 @@
         const segments = dates.slice(1).map((end, i) => ({
             start: dates[i], end, height: baseDistance(end) - baseDistance(dates[i])
         }));
-        // Expand only the shared date intervals that need space for adjacent labels.
-        // This never moves a label away from its date node.
+        // Expand the shared date intervals, keeping every date on its own node.
         for (const industry of [false, true]) {
             const track = entries.filter(entry => isIndustry(entry) === industry)
                 .sort((a, b) => endMonth(b) - endMonth(a));
@@ -80,7 +84,7 @@
         const axisTop = Math.max(...entries.map(entry => measurements.get(entry).dateCenter)) + 2;
         plot.style.setProperty('--axis-top', axisTop + 'px');
         plot.style.setProperty('--axis-height', totalHeight + 'px');
-        let bottom = axisTop + totalHeight;
+        let bottom = axisTop + totalHeight + 12;
         for (const entry of entries) {
             const top = axisTop + y(endMonth(entry));
             const size = measurements.get(entry);
@@ -115,5 +119,10 @@
     };
     layout();
     window.addEventListener('resize', layout);
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(records => {
+            if (Math.abs(records[0].contentRect.width - lastWidth) > 0.5) layout();
+        }).observe(chart);
+    }
     if (document.fonts) document.fonts.ready.then(layout);
 })();
