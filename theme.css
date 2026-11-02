@@ -106,6 +106,7 @@ img { max-width: 100%; }
     text-transform: uppercase;
 }
 .career-chart.is-enhanced .career-headings > span { width: min(280px, 100%); justify-self: center; text-align: left; }
+.career-chart.is-enhanced .career-headings > span:first-child { text-align: right; }
 .career-plot.is-ready { height: var(--timeline-height, 320px); }
 .career-plot.is-ready .career-axis {
     display: block;
@@ -180,8 +181,8 @@ img { max-width: 100%; }
 .career-plot.is-ready .career-current .career-range { background: var(--accent); }
 .career-plot.is-ready .career-industry .career-range { left: calc(50% + var(--career-track-offset) - 1px); background: #788e83; }
 .career-plot.is-ready .career-startup .career-range { background: #4f7161; }
-.career-plot.is-ready .career-label { position: relative; top: var(--label-offset); width: var(--career-label-width); margin-left: var(--career-label-inset); text-align: left; overflow-wrap: break-word; }
-.career-plot.is-ready .career-industry .career-label { margin-left: calc(var(--career-column-width) + var(--career-gutter) + var(--career-label-inset)); }
+.career-plot.is-ready .career-label { position: relative; top: var(--label-offset); width: var(--career-label-width); margin-left: var(--career-label-inset); text-align: right; overflow-wrap: break-word; }
+.career-plot.is-ready .career-industry .career-label { margin-left: calc(var(--career-column-width) + var(--career-gutter) + var(--career-label-inset)); text-align: left; }
 .career-date { margin: 0 0 4px; color: var(--muted); font-size: 11px; line-height: 1.5; font-variant-numeric: tabular-nums; }
 .career-date time { white-space: nowrap; }
 .career-present { color: var(--accent); }
