@@ -19,6 +19,7 @@ a:focus-visible, summary:focus-visible {
     border-radius: 2px;
 }
 img { max-width: 100%; }
+picture { display: block; }
 #content {
     display: block;
     width: 100%;
@@ -223,6 +224,8 @@ img { max-width: 100%; }
 .funding-duration { color: var(--muted); }
 /* Publications and project resource links use one quiet text treatment. */
 #publications { width: 100%; max-width: 880px; }
+#publications .section-title { justify-content: flex-start; align-items: baseline; gap: 6px 12px; }
+#publications .section-link { font-weight: 400; white-space: nowrap; }
 #publications .section-title + .year-heading { margin-top: 0; }
 #publications .year-heading {
     display: flex;
@@ -313,8 +316,8 @@ img { max-width: 100%; }
 .internship-card .project-section { margin: 24px 0 0; padding: 0; }
 .internship-card .project-section + .project-section { margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--rule); }
 .internship-card .project-card { display: block; margin: 0; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; }
-.project-image { margin: 0 0 14px; }
-.project-image img { display: block; width: 100%; height: auto; max-height: none; }
+.project-image { margin: 0 0 14px; background: var(--paper); isolation: isolate; }
+.project-image img { display: block; width: 100%; height: auto; max-height: none; mix-blend-mode: multiply; }
 .internship-card .project-text { padding: 0; }
 .project-title, .project-title-0222 { margin: 0 0 7px; padding: 0; color: var(--ink); font: 600 16px/1.4 var(--sans); text-wrap: pretty; overflow-wrap: break-word; }
 .project-authors, .project-authors-0222 { margin: 0 0 5px; color: var(--muted); font-size: 13px; line-height: 1.65; }
@@ -323,6 +326,7 @@ img { max-width: 100%; }
 .paper-list-0222 { margin: 18px 0 0; padding: 0; list-style: none; }
 .paper-item-0222 { display: flex; align-items: flex-start; gap: 12px; margin: 0 0 20px; }
 .paper-item-0222:last-child { margin-bottom: 0; }
+.paper-logo-frame { flex: 0 0 44px; width: 44px; }
 .paper-logo-0222 { flex: 0 0 44px; width: 44px; height: 44px; margin: 2px 0 0; object-fit: contain; mix-blend-mode: multiply; }
 .paper-content-0222 { min-width: 0; }
 .project-name { font: inherit; color: inherit; }

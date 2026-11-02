@@ -7,7 +7,7 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="template.css?v=c173c63b77e5" />
-    <link rel="stylesheet" type="text/css" href="theme.css?v=6c249e34816d" />
+    <link rel="stylesheet" type="text/css" href="theme.css?v=c59c973a6b87" />
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,7 +29,10 @@
                 <div class="intro-main">
                     <header class="profile-container">
                         <div class="profile-pic">
-                            <img src="pics/self.jpg" width="1280" height="1280" alt="Portrait of Mengqi Huang"></div>
+                            <picture>
+                                <source type="image/webp" srcset="pics/optimized/self-160.webp?v=5b02e679bf84 160w, pics/optimized/self-320.webp?v=90691dcda559 320w, pics/optimized/self-640.webp?v=47930ca8f647 640w" sizes="(max-width: 350px) 84px, (max-width: 420px) 100px, (max-width: 600px) 120px, 160px">
+                                <img src="pics/optimized/self-640.jpg?v=fd12433445df" width="1280" height="1280" alt="Portrait of Mengqi Huang" decoding="async" loading="eager" fetchpriority="high">
+                            </picture></div>
                         <div class="profile-info">
                             <h1 class="name">Mengqi Huang</h1>
                             <div class="name-zh">
@@ -227,7 +230,7 @@
             <section id="publications" class="page-section" aria-labelledby="publications-title">
             <h2 class="section-title" id="publications-title">
                 <span>Selected Publications</span>
-                <a class="section-link" href="https://scholar.google.com.hk/citations?user=BJvM6gsAAAAJ&hl=zh-CN&oi=sra">Google Scholar Profile</a>
+                <a class="section-link" href="https://scholar.google.com.hk/citations?user=BJvM6gsAAAAJ&amp;hl=zh-CN&amp;oi=sra">[Full list on Google Scholar]</a>
             </h2>
 
             <h3 class="year-heading">2026</h3>
@@ -519,7 +522,10 @@
                 <div class="project-section">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="./pics/teaser_realcustom.jpg" width="1592" height="608" alt="Examples of subject-driven image generation with RealCustom" loading="lazy"></div>
+                            <picture>
+                                <source type="image/webp" srcset="pics/optimized/realcustom-480.webp?v=39102aca18bd 480w, pics/optimized/realcustom-960.webp?v=6b64bb215a94 960w, pics/optimized/realcustom-1280.webp?v=809ebb9a2fac 1280w, pics/optimized/realcustom-1592.webp?v=a73c303e2f91 1592w" sizes="(max-width: 350px) calc(100vw - 32px), (max-width: 420px) calc(100vw - 40px), (max-width: 600px) calc(100vw - 48px), (max-width: 1016px) calc(100vw - 56px), 960px">
+                                <img src="pics/optimized/realcustom-1592.jpg?v=7c5c25f118e3" width="1592" height="608" alt="Examples of subject-driven image generation with RealCustom" loading="lazy" decoding="async">
+                            </picture></div>
                         <div class="project-text">
                             <h3 class="project-title">RealCustom: Narrowing Real Text Word for Real-Time Open-Domain Text-to-Image Customization</h3>
                             <div class="project-authors">
@@ -553,12 +559,18 @@
                 <div class="project-section">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="./pics/uxo_logo.jpg" width="3098" height="1342" alt="Overview of the UXO series for image customization" loading="lazy"></div>
+                            <picture>
+                                <source type="image/webp" srcset="pics/optimized/uxo-480.webp?v=a61466a32809 480w, pics/optimized/uxo-960.webp?v=d8739efc009a 960w, pics/optimized/uxo-1280.webp?v=9b1cf0d37b3d 1280w, pics/optimized/uxo-1920.webp?v=313df2d5a8b5 1920w" sizes="(max-width: 350px) calc(100vw - 32px), (max-width: 420px) calc(100vw - 40px), (max-width: 600px) calc(100vw - 48px), (max-width: 1016px) calc(100vw - 56px), 960px">
+                                <img src="pics/optimized/uxo-1920.jpg?v=1056dd4c8059" width="3098" height="1342" alt="Overview of the UXO series for image customization" loading="lazy" decoding="async">
+                            </picture></div>
                         <!-- <strong>UXO Series Research: </strong> -->
                         <h3 class="project-title">UXO Series Research</h3>
                         <ul class="paper-list-0222">
                             <li class="paper-item-0222">
-                            <img src="pics/logos/uno.jpg" class="paper-logo-0222" width="262" height="159" alt="UNO project logo" loading="lazy">
+                            <picture class="paper-logo-frame">
+                                <source type="image/webp" srcset="pics/optimized/uno-logo-128.webp?v=4510a91c1181 128w" sizes="44px">
+                                <img src="pics/optimized/uno-logo-128.jpg?v=36459deb7009" class="paper-logo-0222" width="262" height="159" alt="UNO project logo" loading="lazy" decoding="async">
+                            </picture>
                             <div class="paper-content-0222">
                                 <!-- <div class="project-title-0222">
                                     UNO: Less-to-More Generalization: Unlocking More Controllability by In-Context Generation</div> -->
@@ -574,7 +586,10 @@
                                     <a href="https://bytedance.github.io/UNO/" class="link-btn project-btn">Project</a></div></div>
                             </li>
                             <li class="paper-item-0222">
-                            <img src="pics/logos/uso.jpg" class="paper-logo-0222" width="191" height="159" alt="USO project logo" loading="lazy">
+                            <picture class="paper-logo-frame">
+                                <source type="image/webp" srcset="pics/optimized/uso-logo-128.webp?v=e441aec7e8d6 128w" sizes="44px">
+                                <img src="pics/optimized/uso-logo-128.jpg?v=ceac60890fba" class="paper-logo-0222" width="191" height="159" alt="USO project logo" loading="lazy" decoding="async">
+                            </picture>
                             <div class="paper-content-0222">
                                 <!-- <div class="project-title-0222">
                                     USO: Unified Customized Generation by Disentangled Reward Modeling</div> -->
@@ -589,7 +604,10 @@
                                     <a href="https://github.com/bytedance/USO" class="link-btn code-btn">Code</a></div></div>
                             </li>
                             <li class="paper-item-0222">
-                            <img src="pics/logos/umo.jpg" class="paper-logo-0222" width="147" height="159" alt="UMO project logo" loading="lazy">
+                            <picture class="paper-logo-frame">
+                                <source type="image/webp" srcset="pics/optimized/umo-logo-128.webp?v=491a7be7be39 128w" sizes="44px">
+                                <img src="pics/optimized/umo-logo-128.jpg?v=36e4f9f8688c" class="paper-logo-0222" width="147" height="159" alt="UMO project logo" loading="lazy" decoding="async">
+                            </picture>
                             <div class="paper-content-0222">
                                 <!-- <div class="project-title-0222">
                                     UMO: Scaling Multi-Identity Consistency for Image Customization via Multi-to-Multi Matching Paradigm</div> -->
@@ -613,7 +631,10 @@
                 <div class="project-section">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="./pics/lance.png" width="5183" height="1365" alt="Overview of Lance for unified multimodal understanding and generation" loading="lazy"></div>
+                            <picture>
+                                <source type="image/webp" srcset="pics/optimized/lance-480.webp?v=e366eec5042c 480w, pics/optimized/lance-960.webp?v=f944028e3f16 960w, pics/optimized/lance-1280.webp?v=bbd6171b1809 1280w, pics/optimized/lance-1920.webp?v=9578df53fb85 1920w" sizes="(max-width: 350px) calc(100vw - 32px), (max-width: 420px) calc(100vw - 40px), (max-width: 600px) calc(100vw - 48px), (max-width: 1016px) calc(100vw - 56px), 960px">
+                                <img src="pics/optimized/lance-1920.jpg?v=e5e96f283214" width="5183" height="1365" alt="Overview of Lance for unified multimodal understanding and generation" loading="lazy" decoding="async">
+                            </picture></div>
                         <div class="project-text">
                             <h3 class="project-title">Lance: Unified Multimodal Modeling by Multi-Task Synergy</h3>
                             <div class="project-authors">
