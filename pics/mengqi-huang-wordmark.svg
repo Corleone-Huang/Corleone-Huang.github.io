@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 1034 124" role="img" aria-labelledby="wordmark-title">
+  <title id="wordmark-title">Mengqi Huang</title>
+  <g fill="currentColor" color="#181818" stroke-linejoin="miter" stroke-linecap="butt">
+    <g transform="translate(0 0)"><path d="M0 100V0H21L49 51L77 0H98V100H78V34L56 76H42L20 34V100Z"/></g>
+    <g transform="translate(105 0)"><path d="M0 0H68V20H20V41H61V59H20V80H68V100H0Z"/></g>
+    <g transform="translate(180 0)"><path d="M0 100V0H20L66 64V0H86V100H66L20 36V100Z"/></g>
+    <g transform="translate(273 0)"><path d="M78 24C70 13 59 10 44 10C23 10 10 27 10 50C10 73 23 90 44 90C58 90 68 86 78 78V55H49" fill="none" stroke="currentColor" stroke-width="20"/></g>
+    <g transform="translate(368 0)"><ellipse cx="45" cy="50" rx="35" ry="40" fill="none" stroke="currentColor" stroke-width="20"/><path d="M49 68L63 112" fill="none" stroke="currentColor" stroke-width="18"/></g>
+    <g transform="translate(465 0)"><path d="M0 0H20L52 100H32Z"/></g>
+    <g transform="translate(556 0)"><path d="M0 0H20V41H66V0H86V100H66V59H20V100H0Z"/></g>
+    <g transform="translate(649 0)"><path d="M10 0V62C10 82 22 90 44 90C66 90 78 82 78 62V0" fill="none" stroke="currentColor" stroke-width="20"/></g>
+    <g transform="translate(744 0)"><path fill-rule="evenodd" d="M0 100L37 0H57L94 100H73L65 78H29L21 100ZM35 61H59L47 28Z"/></g>
+    <g transform="translate(845 0)"><path d="M0 100V0H20L66 64V0H86V100H66L20 36V100Z"/></g>
+    <g transform="translate(938 0)"><path d="M78 24C70 13 59 10 44 10C23 10 10 27 10 50C10 73 23 90 44 90C58 90 68 86 78 78V55H49" fill="none" stroke="currentColor" stroke-width="20"/></g>
+  </g>
+</svg>

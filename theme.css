@@ -1,7 +1,7 @@
 /* Shared visual system for the academic homepage. */
 :root {
     --paper: #faf9f6;
-    --ink: #292722;
+    --ink: #181818;
     --muted: #6b675f;
     --accent: #a64e38;
     --rule: #dedbd3;
@@ -25,10 +25,11 @@ picture { display: block; }
     width: 100%;
     max-width: 1176px;
     margin: 0 auto;
-    padding: 56px 48px 64px;
+    padding: 28px 48px 64px;
     background: transparent;
 }
 #left { width: 100%; min-width: 0; }
+.site-masthead { margin-bottom: 48px; }
 .intro-layout { display: grid; grid-template-columns: minmax(0, 1fr) 210px; align-items: start; gap: 40px; }
 .intro-main { min-width: 0; }
 .profile-container {
@@ -41,22 +42,16 @@ picture { display: block; }
 .profile-pic { flex: 0 0 auto; margin: 0; }
 .profile-pic img { display: block; width: 160px; height: 160px; mix-blend-mode: multiply; }
 .profile-info { min-width: 0; }
-.profile-info .name {
-    display: block;
-    margin: 0 0 8px;
-    padding: 0;
-    font: 400 40px/1.15 var(--serif);
-    letter-spacing: -1px;
-}
+.profile-info .name { display: block; margin: 0 0 10px; padding: 0; color: var(--ink); line-height: 0; text-align: left; }
+.name-logo { display: block; width: 320px; max-width: 100%; height: auto; }
+.name-text { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .profile-info .name-zh { margin: 0 0 12px; }
 .name-zh img { display: block; width: auto; height: 36px; mix-blend-mode: multiply; }
 .profile-info .affiliation { margin: 0 0 3px; color: var(--muted); font-size: 13px; line-height: 1.65; }
 .profile-info .email-link { color: var(--muted); }
-.profile-links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 9px; font-size: 12px; }
-.section-nav { display: flex; flex-wrap: wrap; gap: 6px 0; margin: 0 0 24px; font-size: 12px; line-height: 1.6; }
-.section-nav a { color: var(--muted); white-space: nowrap; }
-.section-nav a + a::before { content: "·"; margin: 0 10px; color: #a29a8d; }
-.section-nav a:hover, .section-nav a:focus-visible { color: var(--accent); }
+.section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; font-size: 12px; line-height: 20px; }
+.section-nav a { padding: 5px 11px; border: 1px solid #e6e3d9; border-radius: 999px; background: #f5f4ed; color: #4b4942; text-decoration: none; white-space: nowrap; }
+.section-nav a:hover, .section-nav a:focus-visible { color: var(--ink); background: #e9e7dc; border-color: #dcd8cc; }
 #intro { float: none; clear: none; width: 100%; max-width: none; margin: 0; padding: 0; border: 0; background: transparent; }
 #intro .bio-content p {
     margin: 0;
@@ -81,8 +76,8 @@ picture { display: block; }
     margin: 0 0 18px;
     padding: 0;
     color: var(--ink);
-    font: 400 24px/1.3 var(--serif);
-    letter-spacing: -0.4px;
+    font: 600 24px/1.3 var(--sans);
+    letter-spacing: -0.6px;
 }
 .section-title:first-of-type { margin-top: 0; }
 .section-link { flex-shrink: 0; font: 500 12px/1.6 var(--sans); letter-spacing: 0; }
@@ -333,7 +328,7 @@ picture { display: block; }
 .site-footer { max-width: 960px; margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; }
 /* News remains a separate column on wide screens. */
 #news { width: 100%; min-width: 0; margin: 0; padding: 0 0 0 24px; border: 0; border-left: 1px solid var(--rule); border-radius: 0; background: transparent; }
-#news h2 { display: block; margin: 0 0 16px; padding: 0; border: 0; color: var(--ink); font: 400 24px/1.3 var(--serif); text-align: left; }
+#news h2 { display: block; margin: 0 0 16px; padding: 0; border: 0; color: var(--ink); font: 600 24px/1.3 var(--sans); letter-spacing: -0.6px; text-align: left; }
 .news-list { margin: 0; padding: 0; border: 0; list-style: none; }
 .news-list li { margin: 0 0 16px; padding: 0; }
 .news-list li::before { display: none; }
@@ -343,17 +338,17 @@ picture { display: block; }
 .news-archive summary { width: fit-content; padding: 4px 0; color: var(--accent); cursor: pointer; }
 .news-archive[open] summary { margin-bottom: 12px; }
 @media (max-width: 1100px) {
-    #content { padding: 40px 28px 56px; }
+    #content { padding: 28px 28px 56px; }
     .intro-layout { gap: 28px; grid-template-columns: minmax(0, 1fr) 180px; }
     .profile-container { gap: 20px; }
-    .profile-info .name { font-size: 34px; }
+    .name-logo { width: 280px; }
 }
 @media (max-width: 740px) {
-    #content { max-width: 840px; padding: 36px 28px 48px; }
+    #content { max-width: 840px; padding: 28px 28px 48px; }
+    .site-masthead { margin-bottom: 32px; }
+    .section-nav { justify-content: flex-start; }
     .intro-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
     .page-section { margin-top: 40px; }
-    .section-nav { gap: 6px 16px; }
-    .section-nav a + a::before { content: none; }
     #news { margin-top: 32px; padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--rule); }
     .news-list { display: grid; gap: 12px; }
     .news-list li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 12px; margin: 0; }
@@ -361,10 +356,10 @@ picture { display: block; }
     .news-archive { margin-top: 12px; }
 }
 @media (max-width: 600px) {
-    #content { padding: 28px 24px 40px; }
+    #content { padding: 24px 24px 40px; }
     .profile-container { gap: 18px; margin-bottom: 26px; }
     .profile-pic img { width: 120px; height: 120px; }
-    .profile-info .name { font-size: 30px; letter-spacing: -0.6px; }
+    .name-logo { width: 250px; }
     .name-zh img { height: 30px; }
     .profile-info .name-zh { margin-bottom: 8px; }
     .profile-info .affiliation { font-size: 12px; }
@@ -376,16 +371,14 @@ picture { display: block; }
     #content { padding-right: 20px; padding-left: 20px; }
     .profile-container { gap: 14px; }
     .profile-pic img { width: 100px; height: 100px; }
-    .profile-info .name { font-size: 27px; }
+    .name-logo { width: 215px; }
     .name-zh img { height: 28px; }
-    .profile-links { gap: 4px 12px; }
     #publications .section-link { flex-basis: 100%; }
 }
 @media (max-width: 350px) {
     #content { padding-right: 16px; padding-left: 16px; }
     .profile-container { gap: 12px; }
     .profile-pic img { width: 84px; height: 84px; }
-    .profile-info .name { font-size: 24px; }
+    .name-logo { width: 185px; }
     .profile-info .affiliation { font-size: 11px; }
-    .profile-links { font-size: 11px; }
 }
