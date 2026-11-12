@@ -7,7 +7,7 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="template.css?v=c173c63b77e5" />
-    <link rel="stylesheet" type="text/css" href="theme.css?v=0f1417867731" />
+    <link rel="stylesheet" type="text/css" href="theme.css?v=8a03fea9f556" />
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -56,9 +56,9 @@
                     <section id="intro" aria-label="Research interests">
                         <div class="bio-content">
                             <!-- I received my Ph.D. degree from the University of Science and Technology of China (USTC) in 2025.  -->
-                            <p>My research interests include deep generative models, image/video/3D generation, and unified multimodal models.</p>
+                            <p class="research-lead">My research interests include deep generative models, <strong>image, video, and 3D generation</strong>, and <strong>unified multimodal models</strong>. In <a href="#paper-uno">UNO</a> (ICCV 2025), we developed a unified model for composing multiple reference subjects in one image while preserving their appearance.</p>
                             <p>I am the recipient of the Best Student Paper Award at ACM Multimedia 2022 as the first author. In 2025, I was awarded the First Prize of the Natural Science Award from the China Society of Image and Graphics (CSIG) and the Special Prize of the President Scholarship of the Chinese Academy of Sciences (CAS). I have also received funding from the First National Natural Science Foundation of China for Youth Student Fundamental Research (Ph.D. student). I was selected for top industry talent programs including the Alibaba, ByteDance, etc.</p>
-                            <p class="lang-zh" lang="zh-CN">研究方向为图像、视频、3D等视觉内容生成和多模态生成-理解统一模型。 博士首篇论文以第一作者获CCF-A类国际会议ACM Multimedia 2022最佳学生论文奖。获2025年中国图像图形学会自然科学一等奖、中国科学院院长特别奖、首届国家自然科学基金青年学生基础研究项目（博士研究生）资助。2025年校招入选阿里星（校招P7）、字节跳动头部人才计划（校招3-1）等。</p>
+                            <p class="lang-zh" lang="zh-CN">研究方向为图像、视频、3D等视觉内容生成和多模态生成-理解统一模型。<a href="#paper-uno">UNO</a>（ICCV 2025）用同一个模型将多个参考主体组合到同一张图像中，并保留各主体的外观特征。博士首篇论文以第一作者获CCF-A类国际会议ACM Multimedia 2022最佳学生论文奖。获2025年中国图像图形学会自然科学一等奖、中国科学院院长特别奖、首届国家自然科学基金青年学生基础研究项目（博士研究生）资助。2025年校招入选阿里星（校招P7）、字节跳动头部人才计划（校招3-1）等。</p>
                             <!-- Research group and recruitment information (temporarily hidden)
                             <div class="research-intro">
                                 <p class="research-role">I am currently leading a research group at USTC, dedicated to advancing the frontiers of generative and multimodal intelligence.</p>
@@ -73,6 +73,14 @@
                     <h2 id="news-title">News</h2>
                     <ul class="news-list">
                         <li>
+                            <div class="news-date">November 2026</div>
+                            <div class="news-content"><a href="#paper-chronos">Chronos</a> was accepted at ACM MM 2026 and placed joint first in Track 1 and first in Track 2 of the Identity-Preserving Video Generation Challenge.</div>
+                        </li>
+                        <li>
+                            <div class="news-date">November 2026</div>
+                            <div class="news-content">Our paper on <a href="#paper-foreground-background-editing">foreground–background image editing</a> was accepted by IEEE TCSVT.</div>
+                        </li>
+                        <li>
                             <div class="news-date">May 2026</div>
                             <div class="news-content">UFO was accepted at ICML 2026.</div>
                             </li>
@@ -84,6 +92,10 @@
                             <div class="news-date">January 2026</div>
                             <div class="news-content">One paper was accepted by IEEE TPAMI.</div>
                             </li>
+                    </ul>
+                    <details class="news-archive">
+                        <summary>Earlier news</summary>
+                        <ul class="news-list">
                         <li>
                             <div class="news-date">November 2025</div>
                             <div class="news-content">One paper was accepted at AAAI 2026.</div>
@@ -92,10 +104,6 @@
                             <div class="news-date">October 2025</div>
                             <div class="news-content">One paper was accepted by IEEE TPAMI.</div>
                             </li>
-                    </ul>
-                    <details class="news-archive">
-                        <summary>Earlier news</summary>
-                        <ul class="news-list">
                         <li>
                             <div class="news-date">September 2025</div>
                             <div class="news-content">One paper was accepted at NeurIPS 2025.</div>
@@ -232,68 +240,96 @@
 
             <h3 class="year-heading">2026</h3>
 
+            <div class="paper-card" id="paper-chronos">
+                <div class="paper-content">
+                    <h3 class="paper-title"><a href="https://doi.org/10.1145/3767308.3837689">Chronos: Sequential Identity-Preserving Video Generation by Temporal Anchoring</a></h3>
+                    <div class="paper-authors"><span class="my-name">Mengqi Huang*</span>, Wenchuan Wang*, Zhendong Mao✉, Yijing Tu, Zhike Liu, Luoni Wang, Ning Tong, Xiaoxiao Sheng, Tianyu Huang, Xuecheng Qi, Yongdong Zhang</div>
+                    <div class="paper-venue">
+                        <span class="conf-badge">ACM MM 2026</span>
+                        <a class="award-badge" href="https://hidream-ai.github.io/ipvg-challenge-2026.github.io/#leaderboard">Joint 1st in Track 1 (Facial Identity-Preserving Video Generation) · 1st in Track 2 (Sequential Action Identity-Preserving Video Generation)</a>
+                    </div>
+                    <div class="paper-badges">
+                        <a href="https://doi.org/10.1145/3767308.3837689" class="link-btn pdf-btn">Paper</a>
+                        <a href="https://arxiv.org/abs/2611.05893" class="link-btn pdf-btn">arXiv</a>
+                        <a href="https://github.com/wenc-k/Chronos" class="link-btn code-btn">Code</a>
+                        <a href="https://wenc-k.github.io/Chronos-page/" class="link-btn project-btn">Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper-card" id="paper-foreground-background-editing">
+                <div class="paper-content">
+                    <h3 class="paper-title"><a href="https://doi.org/10.1109/TCSVT.2026.3748506">Associating and Disentangling Foreground-Background for Text-based Image Editing</a></h3>
+                    <div class="paper-authors">Fengyi Fu, Zhendong Mao, <span class="my-name">Mengqi Huang</span>, Lei Zhang, Yongdong Zhang</div>
+                    <div class="paper-venue"><span class="conf-badge">IEEE TCSVT 2026</span></div>
+                    <div class="paper-badges"><a href="https://doi.org/10.1109/TCSVT.2026.3748506" class="link-btn pdf-btn">Paper</a></div>
+                </div>
+            </div>
 
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://arxiv.org/pdf/2605.18678">Lance: Unified Multimodal Modeling by Multi-Task Synergy</a></h3>
+                    <h3 class="paper-title"><a href="https://arxiv.org/abs/2605.18678">Lance: Unified Multimodal Modeling by Multi-Task Synergy</a></h3>
                     <div class="paper-authors">Fengyi Fu*, <span class="my-name">Mengqi Huang*✉</span>, Shaojin Wu*, Yunsheng Jiang*, Yufei Huo, Hao Li, Yinghang Song, Fei Ding, Jianzhu Guo✉, Qian He, Zheren Fu, Zhendong Mao, Yongdong Zhang</div>
                     <div class="paper-venue"><span class="conf-badge">Technical Report</span></div>
-                    <div class="paper-badges"><a href="https://arxiv.org/pdf/2605.18678" class="link-btn pdf-btn">Paper</a>
+                    <p class="paper-contribution">Lance unifies image and video understanding, generation, and editing by training separate understanding and generation pathways on a shared multimodal context.</p>
+                    <div class="paper-badges"><a href="https://arxiv.org/abs/2605.18678" class="link-btn pdf-btn">Paper</a>
                         <a href="https://github.com/bytedance/Lance" class="link-btn code-btn has-stars" aria-label="Code on GitHub, 1,363 stars" title="1,363 GitHub stars · checked November 1, 2026">Code <span class="github-stars" aria-hidden="true">★ 1.4k</span></a>
                         <a href="https://lance-project.github.io/" class="link-btn project-btn">Project</a></div></div></div>
 
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://arxiv.org/abs/2609.12397">UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation</a></h3>
+                    <h3 class="paper-title"><a href="https://proceedings.mlr.press/v306/zhang26dk.html">UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation</a></h3>
                     <div class="paper-authors">Danning Zhang*, Yijing Lin*, Shuhan Zhuang*, <span class="my-name">Mengqi Huang✉</span>, Shaojin Wu, Shancheng Fang, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">ICML 2026</span></div>
-                    <div class="paper-badges"><a href="https://arxiv.org/abs/2609.12397" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://proceedings.mlr.press/v306/zhang26dk.html" class="link-btn pdf-btn">Paper</a>
                         <a href="https://github.com/UFOTeamwork/UFO" class="link-btn code-btn">Code</a></div></div></div>
 
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://arxiv.org/pdf/2601.22837">NativeTok: Native Visual Tokenization for Improved Image Generation</a></h3>
+                    <h3 class="paper-title"><a href="https://arxiv.org/abs/2601.22837">NativeTok: Native Visual Tokenization for Improved Image Generation</a></h3>
                     <div class="paper-authors">Bin Wu, <span class="my-name">Mengqi Huang✉</span>, Weinan Jia, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">ICASSP 2026</span> <span class="award-badge">Oral</span></div>
-                    <div class="paper-badges"><a href="https://arxiv.org/pdf/2601.22837" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://arxiv.org/abs/2601.22837" class="link-btn pdf-btn">Paper</a>
+                        <a href="https://doi.org/10.1109/ICASSP55912.2026.11462037" class="link-btn pdf-btn">IEEE</a>
                         <a href="https://github.com/wangbei1/Nativetok" class="link-btn code-btn">Code</a></div></div></div>
 
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wu_Unified_Customized_Generation_by_Disentangled_Reward_Modeling_CVPR_2026_paper.pdf">Unified Customized Generation by Disentangled Reward Modeling</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wu_Unified_Customized_Generation_by_Disentangled_Reward_Modeling_CVPR_2026_paper.html">Unified Customized Generation by Disentangled Reward Modeling</a></h3>
                     <div class="paper-authors">Shaojin Wu, <span class="my-name">Mengqi Huang✉</span>, Yufeng Cheng, Wenxu Wu, Jiahe Tian, Yiming Luo, Fei Ding, Qian He</div>
                     <!-- <div class="paper-badges"><a href="https://arxiv.org/abs/2508.18966" class="link-btn pdf-btn">PDF</a> -->
                     <div class="paper-venue"><span class="conf-badge">CVPR 2026</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wu_Unified_Customized_Generation_by_Disentangled_Reward_Modeling_CVPR_2026_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wu_Unified_Customized_Generation_by_Disentangled_Reward_Modeling_CVPR_2026_paper.html" class="link-btn pdf-btn">Paper</a>
                         <a href="https://github.com/bytedance/USO" class="link-btn code-btn has-stars" aria-label="Code on GitHub, 1,239 stars" title="1,239 GitHub stars · checked November 1, 2026">Code <span class="github-stars" aria-hidden="true">★ 1.2k</span></a></div></div></div>
 
             <!-- 📧 -->
 
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Cheng_Scaling_Multi-Identity_Consistency_for_Image_Customization_via_Multi-to-Multi_Matching_Paradigm_CVPR_2026_paper.pdf">Scaling Multi-Identity Consistency for Image Customization via Multi-to-Multi Matching Paradigm</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Cheng_Scaling_Multi-Identity_Consistency_for_Image_Customization_via_Multi-to-Multi_Matching_Paradigm_CVPR_2026_paper.html">Scaling Multi-Identity Consistency for Image Customization via Multi-to-Multi Matching Paradigm</a></h3>
                     <div class="paper-authors">Yufeng Cheng, Wenxu Wu, Shaojin Wu, <span class="my-name">Mengqi Huang✉</span>, Fei Ding, Qian He</div>
                     <!-- <div class="paper-badges"><a href="https://arxiv.org/pdf/2509.06818" class="link-btn pdf-btn">PDF</a> -->
                     <div class="paper-venue"><span class="conf-badge">CVPR 2026</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Cheng_Scaling_Multi-Identity_Consistency_for_Image_Customization_via_Multi-to-Multi_Matching_Paradigm_CVPR_2026_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Cheng_Scaling_Multi-Identity_Consistency_for_Image_Customization_via_Multi-to-Multi_Matching_Paradigm_CVPR_2026_paper.html" class="link-btn pdf-btn">Paper</a>
                          <a href="https://github.com/bytedance/UMO" class="link-btn code-btn">Code</a></div></div></div>
 
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://arxiv.org/pdf/2510.18692">MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation</a></h3>
-                    <div class="paper-authors">Weinan Jia, Yuning Lu✉, <span class="my-name">Mengqi Huang✉</span>, Hualiang Wang, Binyuan Huang, Nan Chen, Mu Liu, Jidong Jiang, Zhendong Mao</div>
+                    <h3 class="paper-title"><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/bcaebb606df0c8c714756660e4a3bd7c-Abstract-Conference.html">MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation</a></h3>
+                    <div class="paper-authors">Weinan Jia, Yuning Lu✉, <span class="my-name">Mengqi Huang✉</span>, Hualiang Wang, Binyuan Huang, Nan Chen, Weihao Zhou, Jidong Jiang, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">ICLR 2026</span></div>
-                    <div class="paper-badges"><a href="https://arxiv.org/pdf/2510.18692" class="link-btn pdf-btn">Paper</a>
-                         <a href="https://github.com/bytedance-fanqie-ai/MoGA" class="link-btn code-btn">Code</a></div></div></div>
+                    <div class="paper-badges"><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/bcaebb606df0c8c714756660e4a3bd7c-Abstract-Conference.html" class="link-btn pdf-btn">Paper</a>
+                         <a href="https://github.com/bytedance-fanqie-ai/MoGA" class="link-btn code-btn">Code</a>
+                         <a href="https://jiawn-creator.github.io/mixture-of-groups-attention/" class="link-btn project-btn">Project</a></div></div></div>
 
             <!-- Towards Accurate Image Generation via Dynamic Generative Image Transformer -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://ieeexplore.ieee.org/document/11358752">Towards Accurate Image Generation via Dynamic Generative Image Transformer</a></h3>
+                    <h3 class="paper-title"><a href="https://ieeexplore.ieee.org/document/11358752">Toward Accurate Image Generation via Dynamic Generative Image Transformer</a></h3>
                     <div class="paper-authors">Zhendong Mao, <span class="my-name">Mengqi Huang</span>, Yijing Lin, Quan Wang, Lei Zhang, Yongdong Zhang</div>
                     <div class="paper-venue"><span class="conf-badge">IEEE TPAMI 2026</span></div>
                     <div class="paper-badges"><a href="https://ieeexplore.ieee.org/document/11358752" class="link-btn pdf-btn">Paper</a>
-                         <a href="https://github.com/CrossmodalGroup/DynamicVectorQuantization" class="link-btn code-btn">Code</a></div></div></div>
+                         <a href="https://pubmed.ncbi.nlm.nih.gov/41553896/" class="link-btn">Abstract</a></div></div></div>
 
             <!-- RealCustom++ (TPAMI) -->
             <div class="paper-card">
@@ -302,15 +338,16 @@
                     <div class="paper-authors">Zhendong Mao, <span class="my-name">Mengqi Huang</span>, Fei Ding, Mingcong Liu, Qian He, Yongdong Zhang</div>
                     <div class="paper-venue"><span class="conf-badge">IEEE TPAMI 2026</span></div>
                     <div class="paper-badges"><a href="https://ieeexplore.ieee.org/document/11206511" class="link-btn pdf-btn">Paper</a>
+                         <a href="https://arxiv.org/abs/2408.09744" class="link-btn pdf-btn">arXiv</a>
                          <a href="https://github.com/bytedance/RealCustom" class="link-btn code-btn">Code</a></div></div></div>
 
             <!-- LayerEdit -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://arxiv.org/pdf/2511.08251">LayerEdit: Disentangled Multi-Object Editing via Conflict-Aware Multi-Layer Learning</a></h3>
+                    <h3 class="paper-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/37403">LayerEdit: Disentangled Multi-Object Editing via Conflict-Aware Multi-Layer Learning</a></h3>
                     <div class="paper-authors">Fengyi Fu, <span class="my-name">Mengqi Huang✉</span>, Lei Zhang, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">AAAI 2026</span></div>
-                    <div class="paper-badges"><a href="https://arxiv.org/pdf/2511.08251" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/37403" class="link-btn pdf-btn">Paper</a>
                          <a href="https://github.com/fufy1024/LayerEdit" class="link-btn code-btn">Code</a></div></div></div>
 
             <h3 class="year-heading">2025</h3>
@@ -318,102 +355,104 @@
             <!-- Pro3D-Editor (NeurIPS 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openreview.net/forum?id=IXiCBWNTRr">Pro3D-Editor: A Progressive-Views Perspective for Consistent and Precise 3D Editing</a></h3>
+                    <h3 class="paper-title"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/bc6a1f968f8b1dae3e880f3f723d7d46-Abstract-Conference.html">Pro3D-Editor: A Progressive-Views Perspective for Consistent and Precise 3D Editing</a></h3>
                     <div class="paper-authors">Yang Zheng, <span class="my-name">Mengqi Huang✉</span>, Nan Chen, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">NeurIPS 2025</span></div>
-                    <div class="paper-badges"><a href="https://openreview.net/forum?id=IXiCBWNTRr" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/bc6a1f968f8b1dae3e880f3f723d7d46-Abstract-Conference.html" class="link-btn pdf-btn">Paper</a>
                          <a href="https://github.com/shuoyueli4519/Pro3D-Editor-Code" class="link-btn code-btn">Code</a>
                         <a href="https://shuoyueli4519.github.io/Pro3D-Editor/" class="link-btn project-btn">Project</a></div></div></div>
 
             <!-- UNO (ICCV 2025) -->
-            <div class="paper-card">
+            <div class="paper-card" id="paper-uno">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Wu_Less-to-More_Generalization_Unlocking_More_Controllability_by_In-Context_Generation_ICCV_2025_paper.pdf">Less-to-More Generalization: Unlocking More Controllability by In-Context Generation</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wu_Less-to-More_Generalization_Unlocking_More_Controllability_by_In-Context_Generation_ICCV_2025_paper.html">Less-to-More Generalization: Unlocking More Controllability by In-Context Generation</a></h3>
                     <div class="paper-authors">Shaojin Wu, <span class="my-name">Mengqi Huang✉</span>, Wenxu Wu, Yufeng Cheng, Fei Ding, Qian He</div>
                     <div class="paper-venue"><span class="conf-badge">ICCV 2025</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Wu_Less-to-More_Generalization_Unlocking_More_Controllability_by_In-Context_Generation_ICCV_2025_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <p class="paper-contribution">UNO uses the in-context generation capabilities of diffusion transformers to synthesize paired training data. By training on single-subject examples before moving to multi-subject examples, it learns to compose multiple reference subjects in one image while preserving their appearance.</p>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wu_Less-to-More_Generalization_Unlocking_More_Controllability_by_In-Context_Generation_ICCV_2025_paper.html" class="link-btn pdf-btn">Paper</a>
                         <a href="https://github.com/bytedance/UNO" class="link-btn code-btn has-stars" aria-label="Code on GitHub, 1,363 stars" title="1,363 GitHub stars · checked November 1, 2026">Code <span class="github-stars" aria-hidden="true">★ 1.4k</span></a>
                         <a href="https://bytedance.github.io/UNO/" class="link-btn project-btn">Project</a></div></div></div>
 
             <!-- RealGeneral (ICCV 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Lin_RealGeneral_Unifying_Visual_Generation_via_Temporal_In-Context_Learning_with_Video_ICCV_2025_paper.pdf">RealGeneral: Unifying Visual Generation via Temporal In-Context Learning with Video Models</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Lin_RealGeneral_Unifying_Visual_Generation_via_Temporal_In-Context_Learning_with_Video_ICCV_2025_paper.html">RealGeneral: Unifying Visual Generation via Temporal In-Context Learning with Video Models</a></h3>
                     <div class="paper-authors">Yijing Lin, <span class="my-name">Mengqi Huang</span>, Shuhan Zhuang, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">ICCV 2025</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Lin_RealGeneral_Unifying_Visual_Generation_via_Temporal_In-Context_Learning_with_Video_ICCV_2025_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Lin_RealGeneral_Unifying_Visual_Generation_via_Temporal_In-Context_Learning_with_Video_ICCV_2025_paper.html" class="link-btn pdf-btn">Paper</a>
                          <a href="https://github.com/Lyne1/Realgeneral" class="link-btn code-btn">Code</a>
-                        <a href="https://lyne1.github.io/RealGeneral/" class="link-btn project-btn">Project</a></div></div></div>
+                        <a href="https://lyne1.github.io/realgeneral_web/" class="link-btn project-btn">Project</a></div></div></div>
 
             <!-- DualReal (ICCV 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_DualReal_Adaptive_Joint_Training_for_Lossless_Identity-Motion_Fusion_in_Video_ICCV_2025_paper.pdf">DualReal: Adaptive Joint Training for Lossless Identity-Motion Fusion in Video Customization</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wang_DualReal_Adaptive_Joint_Training_for_Lossless_Identity-Motion_Fusion_in_Video_ICCV_2025_paper.html">DualReal: Adaptive Joint Training for Lossless Identity-Motion Fusion in Video Customization</a></h3>
                     <div class="paper-authors">Wenchuan Wang, <span class="my-name">Mengqi Huang</span>, Yijing Tu, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">ICCV 2025</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_DualReal_Adaptive_Joint_Training_for_Lossless_Identity-Motion_Fusion_in_Video_ICCV_2025_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wang_DualReal_Adaptive_Joint_Training_for_Lossless_Identity-Motion_Fusion_in_Video_ICCV_2025_paper.html" class="link-btn pdf-btn">Paper</a>
                          <a href="https://github.com/wenc-k/DualReal" class="link-btn code-btn">Code</a>
                         <a href="https://wenc-k.github.io/dualreal-customization/" class="link-btn project-btn">Project</a></div></div></div>
 
             <!-- LongAnimation (ICCV 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_LongAnimation_Long_Animation_Generation_with_Dynamic_Global-Local_Memory_ICCV_2025_paper.pdf">LongAnimation: Long Animation Generation with Dynamic Global-Local Memory</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chen_LongAnimation_Long_Animation_Generation_with_Dynamic_Global-Local_Memory_ICCV_2025_paper.html">LongAnimation: Long Animation Generation with Dynamic Global-Local Memory</a></h3>
                     <div class="paper-authors">Nan Chen, <span class="my-name">Mengqi Huang</span>, Yihao Meng, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">ICCV 2025</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_LongAnimation_Long_Animation_Generation_with_Dynamic_Global-Local_Memory_ICCV_2025_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Chen_LongAnimation_Long_Animation_Generation_with_Dynamic_Global-Local_Memory_ICCV_2025_paper.html" class="link-btn pdf-btn">Paper</a>
                          <a href="https://github.com/CN-makers/LongAnimation" class="link-btn code-btn">Code</a>
                            <a href="https://cn-makers.github.io/long_animation_web/" class="link-btn project-btn">Project</a></div></div></div>
 
             <!-- A4A (CVPR 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Tu_A4A_Adapter_for_Adapter_Transfer_via_All-for-All_Mapping_for_Cross-Architecture_CVPR_2025_paper.pdf">A4A: Adapter for Adapter Transfer via All-for-All Mapping for Cross-Architecture Models</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Tu_A4A_Adapter_for_Adapter_Transfer_via_All-for-All_Mapping_for_Cross-Architecture_CVPR_2025_paper.html">A4A: Adapter for Adapter Transfer via All-for-All Mapping for Cross-Architecture Models</a></h3>
                     <div class="paper-authors">Keyu Tu, <span class="my-name">Mengqi Huang</span>, Zhuowei Chen, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">CVPR 2025</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Tu_A4A_Adapter_for_Adapter_Transfer_via_All-for-All_Mapping_for_Cross-Architecture_CVPR_2025_paper.pdf" class="link-btn pdf-btn">Paper</a></div></div></div>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Tu_A4A_Adapter_for_Adapter_Transfer_via_All-for-All_Mapping_for_Cross-Architecture_CVPR_2025_paper.html" class="link-btn pdf-btn">Paper</a></div></div></div>
 
             <!-- D^2iT (CVPR 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jia_D2iT_Dynamic_Diffusion_Transformer_for_Accurate_Image_Generation_CVPR_2025_paper.pdf">D^2iT: Dynamic Diffusion Transformer for Accurate Image Generation</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Jia_D2iT_Dynamic_Diffusion_Transformer_for_Accurate_Image_Generation_CVPR_2025_paper.html">D^2iT: Dynamic Diffusion Transformer for Accurate Image Generation</a></h3>
                     <div class="paper-authors">Weinan Jia, <span class="my-name">Mengqi Huang</span>, Nan Chen, Lei Zhang, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">CVPR 2025</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jia_D2iT_Dynamic_Diffusion_Transformer_for_Accurate_Image_Generation_CVPR_2025_paper.pdf" class="link-btn pdf-btn">Paper</a></div></div></div>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Jia_D2iT_Dynamic_Diffusion_Transformer_for_Accurate_Image_Generation_CVPR_2025_paper.html" class="link-btn pdf-btn">Paper</a></div></div></div>
 
             <!-- Dragin3D (CVPR 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Guang_Dragin3D_Image_Editing_by_Dragging_in_3D_Space_CVPR_2025_paper.pdf">Dragin3D: Image Editing by Dragging in 3D Space</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Guang_Dragin3D_Image_Editing_by_Dragging_in_3D_Space_CVPR_2025_paper.html">Dragin3D: Image Editing by Dragging in 3D Space</a></h3>
                     <div class="paper-authors">Weiran Guang, Xiaoguang Gu, <span class="my-name">Mengqi Huang</span>, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">CVPR 2025</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Guang_Dragin3D_Image_Editing_by_Dragging_in_3D_Space_CVPR_2025_paper.pdf" class="link-btn pdf-btn">Paper</a></div></div></div>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Guang_Dragin3D_Image_Editing_by_Dragging_in_3D_Space_CVPR_2025_paper.html" class="link-btn pdf-btn">Paper</a></div></div></div>
 
             <!-- FeedEdit (CVPR 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_FeedEdit_Text-Based_Image_Editing_with_Dynamic_Feedback_Regulation_CVPR_2025_paper.pdf">FeedEdit: Text-Based Image Editing with Dynamic Feedback Regulation</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Fu_FeedEdit_Text-Based_Image_Editing_with_Dynamic_Feedback_Regulation_CVPR_2025_paper.html">FeedEdit: Text-Based Image Editing with Dynamic Feedback Regulation</a></h3>
                     <div class="paper-authors">Fengyi Fu, Lei Zhang, <span class="my-name">Mengqi Huang</span>, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">CVPR 2025</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_FeedEdit_Text-Based_Image_Editing_with_Dynamic_Feedback_Regulation_CVPR_2025_paper.pdf" class="link-btn pdf-btn">Paper</a></div></div></div>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Fu_FeedEdit_Text-Based_Image_Editing_with_Dynamic_Feedback_Regulation_CVPR_2025_paper.html" class="link-btn pdf-btn">Paper</a></div></div></div>
 
             <!-- CustomContrast (AAAI 2025) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32210/34365">CustomContrast: A Multilevel Contrastive Perspective For Subject-Driven Text-to-Image Customization</a></h3>
+                    <h3 class="paper-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32210">CustomContrast: A Multilevel Contrastive Perspective For Subject-Driven Text-to-Image Customization</a></h3>
                     <div class="paper-authors">Nan Chen, <span class="my-name">Mengqi Huang</span>, Zhuowei Chen, Yang Zheng, Lei Zhang, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">AAAI 2025</span></div>
-                    <div class="paper-badges"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32210/34365" class="link-btn pdf-btn">Paper</a></div></div></div>
+                    <div class="paper-badges"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32210" class="link-btn pdf-btn">Paper</a></div></div></div>
 
             <h3 class="year-heading">2024</h3>
 
             <!-- RealCustom (CVPR 2024) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Huang_RealCustom_Narrowing_Real_Text_Word_for_Real-Time_Open-Domain_Text-to-Image_Customization_CVPR_2024_paper.pdf">RealCustom: Narrowing Real Text Word for Real-Time Open-Domain Text-to-Image Customization</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Huang_RealCustom_Narrowing_Real_Text_Word_for_Real-Time_Open-Domain_Text-to-Image_Customization_CVPR_2024_paper.html">RealCustom: Narrowing Real Text Word for Real-Time Open-Domain Text-to-Image Customization</a></h3>
                     <div class="paper-authors"><span class="my-name">Mengqi Huang</span>, Zhendong Mao, Mingcong Liu, Qian He, Yongdong Zhang</div>
                     <div class="paper-venue"><span class="conf-badge">CVPR 2024</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Huang_RealCustom_Narrowing_Real_Text_Word_for_Real-Time_Open-Domain_Text-to-Image_Customization_CVPR_2024_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <p class="paper-contribution">RealCustom uses adaptive masks to limit a reference subject’s influence to relevant regions, preserving both subject appearance and control through the text prompt.</p>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Huang_RealCustom_Narrowing_Real_Text_Word_for_Real-Time_Open-Domain_Text-to-Image_Customization_CVPR_2024_paper.html" class="link-btn pdf-btn">Paper</a>
 
                          <a href="https://github.com/bytedance/RealCustom" class="link-btn code-btn">Code</a>
                          <a href="https://corleone-huang.github.io/RealCustom_plus_plus/" class="link-btn project-btn">Project</a></div></div></div>
@@ -429,7 +468,7 @@
             <!-- DreamIdentity (AAAI 2024) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/27891">DreamIdentity: Improved Editability for Efficient Face-identity Preserved Image Generation</a></h3>
+                    <h3 class="paper-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/27891">DreamIdentity: Enhanced Editability for Efficient Face-Identity Preserved Image Generation</a></h3>
                     <div class="paper-authors">Zhuowei Chen, Shancheng Fang, Wei Liu, Qian He, <span class="my-name">Mengqi Huang</span>, Yongdong Zhang, Zhendong Mao</div>
                     <div class="paper-venue"><span class="conf-badge">AAAI 2024</span></div>
                     <div class="paper-badges"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/27891" class="link-btn pdf-btn">Paper</a>
@@ -441,10 +480,10 @@
             <!-- CVPR 2023 DynamicVQ (Highlight) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Towards_Accurate_Image_Coding_Improved_Autoregressive_Image_Generation_With_Dynamic_CVPR_2023_paper.pdf">Towards Accurate Image Coding: Improved Autoregressive Image Generation With Dynamic Vector Quantization</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Huang_Towards_Accurate_Image_Coding_Improved_Autoregressive_Image_Generation_With_Dynamic_CVPR_2023_paper.html">Towards Accurate Image Coding: Improved Autoregressive Image Generation With Dynamic Vector Quantization</a></h3>
                     <div class="paper-authors"><span class="my-name">Mengqi Huang</span>, Zhendong Mao, Zhuowei Chen, Yongdong Zhang</div>
                     <div class="paper-venue"><span class="conf-badge">CVPR 2023</span> <span class="award-badge">Highlight, 2.5% of submitted papers</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Towards_Accurate_Image_Coding_Improved_Autoregressive_Image_Generation_With_Dynamic_CVPR_2023_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Huang_Towards_Accurate_Image_Coding_Improved_Autoregressive_Image_Generation_With_Dynamic_CVPR_2023_paper.html" class="link-btn pdf-btn">Paper</a>
 
                          <a href="https://github.com/CrossmodalGroup/DynamicVectorQuantization" class="link-btn code-btn">Code</a>
                          <a href="https://youtu.be/ir60YW9JCjU" class="link-btn">Video</a></div></div></div>
@@ -452,10 +491,10 @@
             <!-- CVPR 2023 MaskedVQ -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Not_All_Image_Regions_Matter_Masked_Vector_Quantization_for_Autoregressive_CVPR_2023_paper.pdf">Not All Image Regions Matter: Masked Vector Quantization for Autoregressive Image Generation</a></h3>
+                    <h3 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Huang_Not_All_Image_Regions_Matter_Masked_Vector_Quantization_for_Autoregressive_CVPR_2023_paper.html">Not All Image Regions Matter: Masked Vector Quantization for Autoregressive Image Generation</a></h3>
                     <div class="paper-authors"><span class="my-name">Mengqi Huang</span>, Zhendong Mao, Quan Wang, Yongdong Zhang</div>
                     <div class="paper-venue"><span class="conf-badge">CVPR 2023</span></div>
-                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Not_All_Image_Regions_Matter_Masked_Vector_Quantization_for_Autoregressive_CVPR_2023_paper.pdf" class="link-btn pdf-btn">Paper</a>
+                    <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Huang_Not_All_Image_Regions_Matter_Masked_Vector_Quantization_for_Autoregressive_CVPR_2023_paper.html" class="link-btn pdf-btn">Paper</a>
 
                          <a href="https://github.com/CrossmodalGroup/MaskedVectorQuantization" class="link-btn code-btn">Code</a>
                          <a href="https://www.youtube.com/watch?v=o2eyRscEejw" class="link-btn">Video</a></div></div></div>
@@ -463,10 +502,12 @@
             <!-- ACM MM 2022 DSE-GAN (Best Student Paper Award) -->
             <div class="paper-card">
                 <div class="paper-content">
-                    <h3 class="paper-title"><a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547881">DSE-GAN: Dynamic Semantic Evolution Generative Adversarial Network for Text-to-Image Generation</a></h3>
+                    <h3 class="paper-title"><a href="https://arxiv.org/abs/2209.01339">DSE-GAN: Dynamic Semantic Evolution Generative Adversarial Network for Text-to-Image Generation</a></h3>
                     <div class="paper-authors"><span class="my-name">Mengqi Huang</span>, Zhendong Mao, Penghui Wang, Quan Wang, Yongdong Zhang</div>
                     <div class="paper-venue"><span class="conf-badge">ACM Multimedia 2022</span> <span class="award-badge">Best Student Paper Award, 1/3009 of submitted papers</span></div>
-                    <div class="paper-badges"><a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547881" class="link-btn pdf-btn">Paper</a></div></div></div>
+                    <p class="paper-contribution">DSE-GAN adapts the text guidance at each stage based on earlier image features, so the generator can refine details as the image takes shape.</p>
+                    <div class="paper-badges"><a href="https://arxiv.org/abs/2209.01339" class="link-btn pdf-btn">Paper</a>
+                         <a href="https://doi.org/10.1145/3503161.3547881" class="link-btn pdf-btn">ACM</a></div></div></div>
 
             <p class="publication-legend">* Equal contribution. <span aria-label="Corresponding author">✉</span> Corresponding author.</p>
             </section>
@@ -474,6 +515,15 @@
             <section class="page-section" aria-labelledby="awards">
             <h2 class="section-title" id="awards"><span>Awards &amp; Honors</span></h2>
             <div class="awards-container">
+                <div class="award-group">
+                    <div class="award-group-year">2026</div>
+                    <div class="award-group-list">
+                        <div class="award-item">
+                            <div class="award-title">ACM Multimedia Identity-Preserving Video Generation Challenge</div>
+                            <div class="award-detail">Chronos · <a href="https://hidream-ai.github.io/ipvg-challenge-2026.github.io/#leaderboard">Joint 1st in Track 1 (Facial Identity-Preserving Video Generation) · 1st in Track 2 (Sequential Action Identity-Preserving Video Generation)</a></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="award-group">
                     <div class="award-group-year">2025</div>
                     <div class="award-group-list">
@@ -528,8 +578,9 @@
                             <div class="project-authors">
                                 <span class="my-name">Mengqi Huang</span>, Zhendong Mao, Mingcong Liu, Qian He, Yongdong Zhang</div>
                             <div class="project-venue"><span class="conf-badge">CVPR 2024 &amp; IEEE TPAMI 2026</span></div>
-                            <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Huang_RealCustom_Narrowing_Real_Text_Word_for_Real-Time_Open-Domain_Text-to-Image_Customization_CVPR_2024_paper.pdf" class="link-btn pdf-btn">Paper (CVPR)</a>
-                                <a href="https://pubmed.ncbi.nlm.nih.gov/41105542/" class="link-btn pdf-btn">Paper (TPAMI)</a>
+                            <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Huang_RealCustom_Narrowing_Real_Text_Word_for_Real-Time_Open-Domain_Text-to-Image_Customization_CVPR_2024_paper.html" class="link-btn pdf-btn">Paper (CVPR)</a>
+                                <a href="https://ieeexplore.ieee.org/document/11206511" class="link-btn pdf-btn">Paper (TPAMI)</a>
+                                <a href="https://arxiv.org/abs/2408.09744" class="link-btn pdf-btn">arXiv (TPAMI)</a>
 
                                 <a href="https://github.com/bytedance/RealCustom" class="link-btn code-btn">Code</a>
                                 <a href="https://corleone-huang.github.io/RealCustom_plus_plus/" class="link-btn project-btn">Project</a></div>
@@ -577,7 +628,7 @@
                                 <div class="project-authors-0222">
                                 Shaojin Wu, <span class="my-name">Mengqi Huang✉</span>, Wenxu Wu, Yufeng Cheng, Fei Ding, Qian He</div>
                             <div class="project-venue"><span class="conf-badge">ICCV 2025</span></div>
-                            <div class="paper-badges"><a href="https://arxiv.org/abs/2504.02160" class="link-btn pdf-btn">Paper</a>
+                            <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wu_Less-to-More_Generalization_Unlocking_More_Controllability_by_In-Context_Generation_ICCV_2025_paper.html" class="link-btn pdf-btn">Paper</a>
 
                                     <a href="https://github.com/bytedance/UNO" class="link-btn code-btn">Code</a>
                                     <a href="https://bytedance.github.io/UNO/" class="link-btn project-btn">Project</a></div></div>
@@ -596,7 +647,7 @@
                                 <div class="project-authors-0222">
                                 Shaojin Wu, <span class="my-name">Mengqi Huang✉</span>, Yufeng Cheng, Wenxu Wu, Jiahe Tian, Yiming Luo, Fei Ding, Qian He</div>
                             <div class="project-venue"><span class="conf-badge">CVPR 2026</span></div>
-                            <div class="paper-badges"><a href="https://arxiv.org/abs/2508.18966" class="link-btn pdf-btn">Paper</a>
+                            <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wu_Unified_Customized_Generation_by_Disentangled_Reward_Modeling_CVPR_2026_paper.html" class="link-btn pdf-btn">Paper</a>
 
                                     <a href="https://github.com/bytedance/USO" class="link-btn code-btn">Code</a></div></div>
                             </li>
@@ -614,7 +665,7 @@
                                 <div class="project-authors-0222">
                                 Yufeng Cheng, Wenxu Wu, Shaojin Wu, <span class="my-name">Mengqi Huang✉</span>, Fei Ding, Qian He</div>
                             <div class="project-venue"><span class="conf-badge">CVPR 2026</span></div>
-                            <div class="paper-badges"><a href="https://arxiv.org/pdf/2509.06818" class="link-btn pdf-btn">Paper</a>
+                            <div class="paper-badges"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Cheng_Scaling_Multi-Identity_Consistency_for_Image_Customization_via_Multi-to-Multi_Matching_Paradigm_CVPR_2026_paper.html" class="link-btn pdf-btn">Paper</a>
 
                                     <a href="https://github.com/bytedance/UMO" class="link-btn code-btn">Code</a></div></div>
                             </li>
@@ -637,7 +688,7 @@
                             <div class="project-authors">
                                 Fengyi Fu*, <span class="my-name">Mengqi Huang*✉</span>, Shaojin Wu*, Yunsheng Jiang*, Yufei Huo, Hao Li, Yinghang Song, Fei Ding, Jianzhu Guo✉, Qian He, Zheren Fu, Zhendong Mao, Yongdong Zhang</div>
                             <div class="project-venue"><span class="conf-badge">Technical Report</span></div>
-                            <div class="paper-badges"><a href="https://arxiv.org/pdf/2605.18678" class="link-btn pdf-btn">Paper</a>
+                            <div class="paper-badges"><a href="https://arxiv.org/abs/2605.18678" class="link-btn pdf-btn">Paper</a>
 
                                 <a href="https://github.com/bytedance/Lance" class="link-btn code-btn">Code</a>
                                 <a href="https://lance-project.github.io/" class="link-btn project-btn">Project</a></div>
