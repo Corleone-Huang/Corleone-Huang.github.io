@@ -62,8 +62,7 @@ picture { display: block; }
 }
 #intro .bio-content p + p { margin-top: 12px; }
 #intro .bio-content .bio-en { hyphens: manual; }
-.research-lead { display: block; }
-.research-lead strong { color: var(--ink); font-weight: 600; }
+.bio-en strong { color: var(--ink); font-weight: 600; }
 #intro .bio-content .lang-zh { margin-top: 14px; color: var(--muted); font-size: 14px; font-weight: 400; line-height: 1.9; }
 .page-section {
     width: 100%;
@@ -343,6 +342,13 @@ picture { display: block; }
 /* News remains a separate column on wide screens. */
 #news { width: 100%; min-width: 0; margin: 0; padding: 0 0 0 24px; border: 0; border-left: 1px solid var(--rule); border-radius: 0; background: transparent; }
 #news { max-height: var(--news-viewport-height, none); overflow-y: auto; scrollbar-gutter: stable; overscroll-behavior-y: contain; }
+@media (width > 740px) {
+    /* The bio determines the height of the opening row. */
+    .intro-layout > #news { align-self: stretch; contain: size; min-height: 0; }
+    #news > .news-list > li { margin-bottom: 8px; }
+    #news > .news-list .news-content { line-height: 1.55; }
+    .career-section { margin-top: 24px; padding-top: 20px; }
+}
 #news:focus-visible { outline: 1px solid var(--accent); outline-offset: 4px; }
 #news h2 { display: block; margin: 0 0 16px; padding: 0; border: 0; color: var(--ink); font: 600 24px/1.3 var(--sans); letter-spacing: -0.6px; text-align: left; }
 #news h2 { position: sticky; top: 0; z-index: 1; background: var(--paper); box-shadow: 0 8px 0 var(--paper); }
@@ -365,14 +371,6 @@ picture { display: block; }
     .site-masthead { margin-bottom: 32px; }
     .section-nav { justify-content: flex-start; }
     .intro-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
-    .research-lead {
-        margin-bottom: 12px;
-        color: var(--ink);
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: left;
-        hyphens: manual;
-    }
     .page-section { margin-top: 24px; padding-top: 16px; }
     #news { margin-top: 32px; padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--rule); }
     #news h2 { box-shadow: 0 -24px 0 var(--paper), 0 8px 0 var(--paper); }
