@@ -495,7 +495,7 @@ margin-bottom: 20px;
     transition: box-shadow 0.3s ease;
 }
 
-.education-card:hover, .funding-card:hover {
+.education-card:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
