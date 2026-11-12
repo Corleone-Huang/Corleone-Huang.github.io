@@ -10,7 +10,6 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "pics" / "optimized"
 ASSETS = {
-    "self": ("pics/self.jpg", (160, 320, 640)),
     "realcustom": ("pics/teaser_realcustom.jpg", (480, 960, 1280, 1592)),
     "uxo": ("pics/uxo_logo.jpg", (480, 960, 1280, 1920)),
     "lance": ("pics/lance.png", (480, 960, 1280, 1920)),
