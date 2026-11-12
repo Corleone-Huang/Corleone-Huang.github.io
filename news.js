@@ -14,7 +14,7 @@
     const sizePane = () => {
         const height = summary.getBoundingClientRect().bottom
             - news.getBoundingClientRect().top + news.scrollTop;
-        const value = `${height}px`;
+        const value = `${Math.ceil(height)}px`;
         if (news.style.getPropertyValue('--news-viewport-height') !== value) {
             news.style.setProperty('--news-viewport-height', value);
         }

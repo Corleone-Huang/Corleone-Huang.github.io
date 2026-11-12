@@ -1,12 +1,4 @@
 /* Shared visual system for the academic homepage. */
-@font-face {
-    font-family: "STIX Two Text";
-    src: url("fonts/stix-two-text/stix-two-text.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 400 700;
-    font-display: swap;
-}
-
 :root {
     --paper: #faf9f6;
     --ink: #181818;
@@ -259,7 +251,7 @@ picture { display: block; }
 #publications .paper-authors {
     margin: 3px 0;
     color: var(--muted);
-    font: 14px/1.45 "STIX Two Text", var(--serif);
+    font: 13px/1.5 var(--sans);
 }
 #publications .paper-contribution {
     max-width: 680px;
@@ -329,7 +321,7 @@ picture { display: block; }
 .internship-card { max-width: none; margin: 0; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; transition: none; }
 .internship-card:hover { box-shadow: none; }
 .internship-header { display: flex; align-items: center; margin: 0 0 5px; }
-.internship-header img { width: 30px; height: 30px; margin-right: 10px; mix-blend-mode: multiply; }
+.internship-header img { flex: 0 0 44px; width: 44px; height: 44px; margin-right: 10px; mix-blend-mode: multiply; }
 .internship-header .title { padding: 0; font: 600 15px/1.5 var(--sans); }
 .internship-header a { color: var(--ink); }
 .internship-details, .career-reflection { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
@@ -354,10 +346,11 @@ picture { display: block; }
 .site-footer { max-width: 960px; margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; }
 /* News remains a separate column on wide screens. */
 #news { width: 100%; min-width: 0; margin: 0; padding: 0 0 0 24px; border: 0; border-left: 1px solid var(--rule); border-radius: 0; background: transparent; }
-#news { max-height: var(--news-viewport-height, none); overflow-y: auto; scrollbar-gutter: stable; overscroll-behavior-y: contain; }
+#news { max-height: var(--news-viewport-height, none); overflow-y: hidden; scrollbar-gutter: stable; }
+#news:has(.news-archive[open]) { overflow-y: auto; overscroll-behavior-y: contain; }
 @media (width > 740px) {
-    /* The bio determines the height of the opening row. */
-    .intro-layout > #news { align-self: stretch; contain: size; min-height: 0; }
+    /* Keep all recent items visible without sizing the row to the archive. */
+    .intro-layout > #news { align-self: stretch; contain: size; min-height: var(--news-viewport-height, 0px); }
     #news > .news-list > li { margin-bottom: 8px; }
     #news > .news-list .news-content { line-height: 1.55; }
     .career-section { margin-top: 24px; padding-top: 20px; }
