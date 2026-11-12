@@ -63,7 +63,7 @@ picture { display: block; }
 #intro .bio-content p + p { margin-top: 12px; }
 #intro .bio-content .bio-en { hyphens: manual; }
 .bio-en strong { color: var(--ink); font-weight: 600; }
-#intro .bio-content .lang-zh { margin-top: 14px; color: var(--muted); font-size: 14px; font-weight: 400; line-height: 1.9; }
+#intro .bio-content .lang-zh { margin-top: 14px; color: var(--muted); font: 14px/1.9 var(--sans); }
 .page-section {
     width: 100%;
     max-width: 880px;
